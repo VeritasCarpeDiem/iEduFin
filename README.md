@@ -24,23 +24,37 @@
         <td>Purpose</td>
     </tr>
     <tr>
-        <td>[GameCI](https://game.ci/docs/github/getting-started)</td>
+        <td>
+            <a href="https://game.ci/docs/github/getting-started">GameCI
+            </a>
         <td>Github CI/CD for automated testin</td>
     </tr>
     <tr>
-        <td>[Firebase](https://firebase.google.com/docs/reference/rest/auth#section-sign-in-with-oauth-credential)</td>
+        <td>
+             <a href="https://firebase.google.com/docs/reference/rest/auth#section-sign-in-with-oauth-credential">Firebase
+            </a>
+            </td>
         <td>Google authentication</td>
     </tr>
     <tr>
-        <td>[Google OAuth](https://developers.google.com/identity/protocols/oauth2/native-app#custom-uri-scheme)</td>
+        <td>
+        <a href="https://developers.google.com/identity/protocols/oauth2/native-app#custom-uri-scheme">Google OAuth
+            </a>
+        </td>
         <td>Login request</td>
     </tr>
     <tr>
-        <td>[REST API](https://github.com/proyecto26/RestClient)</td>
+        <td>
+        <a href="https://github.com/proyecto26/RestClient">REST API
+            </a>
+        </td>
         <td>Wrapper library for API calls</td>
     </tr>
     <tr>
-        <td>[FullSerializer](https://github.com/jacobdufault/fullserializer)</td>
+        <td>
+        <a href="https://github.com/jacobdufault/fullserializer">FullSerializer
+            </a>
+        </td>
         <td>Library for serializing/deserializing json objects</td>
     </tr>
 </table>
