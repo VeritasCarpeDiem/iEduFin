@@ -16,7 +16,7 @@
 
 ![image](https://user-images.githubusercontent.com/55304793/178588138-fb865b1f-4e83-4c5a-983c-b7eac18a41f2.png)
 
-## Resources
+## Documentation
 
 <table>
     <tr>
