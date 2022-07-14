@@ -9,10 +9,11 @@ using UnityEngine;
 /// </summary>
 public static class GoogleAuthenticator 
 {
+    
     private const string ClientId = "992076931933-1bl335kc6vhkguilhf5fsimdn2t8hsqm.apps.googleusercontent.com"; 
     private const string ClientSecret = "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";
-
-    private const int Port = 1234;
+    
+    private const int Port = 27182;
     private static readonly string RedirectUri = $"http://localhost:{Port}";
 
     private static readonly HttpCodeListener codeListener = new HttpCodeListener(Port);
