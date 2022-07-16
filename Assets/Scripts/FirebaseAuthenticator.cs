@@ -7,6 +7,7 @@ public static class FirebaseAuthenticator
 {
     //never hardcode like this! This poses a high security risk
     //TODO: refactor hard coded values. See https://codeql.github.com/codeql-query-help/csharp/cs-hardcoded-credentials/
+
     private const string APIKey = "AIzaSyC0DjFRBcg5diwu6tHCtXFLfD66oJ3_VYk";
     public static void SignInWithToken(string token, string providerId)
     {

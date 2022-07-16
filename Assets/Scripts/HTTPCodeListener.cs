@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading;
+using UnityEngine;
 
 public class HttpCodeListener
 {
@@ -47,17 +48,24 @@ public class HttpCodeListener
 
     private void ListenerCallback(IAsyncResult result)
     {
-        var context = listener.EndGetContext(result);
+        try
+        {
+            var context = listener.EndGetContext(result);
 
-        if (!context.Request.QueryString.AllKeys.Contains("code")) return;
-        UnityMainThreadDispatcher.Instance().Enqueue(() => onCodeFetched?.Invoke(context.Request.QueryString.Get("code")));
+            if (!context.Request.QueryString.AllKeys.Contains("code")) return;
+            UnityMainThreadDispatcher.Instance().Enqueue(() => onCodeFetched?.Invoke(context.Request.QueryString.Get("code")));
 
-        var buffer = Encoding.UTF8.GetBytes(responseHtml);
+            var buffer = Encoding.UTF8.GetBytes(responseHtml);
 
-        context.Response.ContentLength64 = buffer.Length;
-        var st = context.Response.OutputStream;
-        st.Write(buffer, 0, buffer.Length);
+            context.Response.ContentLength64 = buffer.Length;
+            var st = context.Response.OutputStream;
+            st.Write(buffer, 0, buffer.Length);
 
-        context.Response.Close();
+            context.Response.Close();
+        }
+        catch(Exception e)
+        {
+            Debug.Log(e);
+        }
     }
 }
