@@ -1,0 +1,14 @@
+Each tile is 16x16 px, and there is a 2 px margin between them.
+
+Tiles included:
+- Grass
+- Detailed grass
+- Dirt path
+- Concrete
+- Road
+- Crosswalk (vertical & horizontal)
+- Road stripe (vertical & horizontal)
+- Grass border (b/w grass and dirt path)
+- Grass border (b/w grass and road)
+- Grass border (b/w grass and concrete)
+- Concrete border (b/w concrete and road)
