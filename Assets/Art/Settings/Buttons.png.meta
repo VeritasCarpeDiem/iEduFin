@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 73cb196475eb7324580ab502c44aa16c
+=======
+guid: 580e127dadd5fb14d81f5d415acb00e8
+>>>>>>> master
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +51,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 16
+=======
+  spritePixelsToUnits: 100
+>>>>>>> master
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +77,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> master
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +128,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Buttons_0
+=======
+      name: save_button
+>>>>>>> master
       rect:
         serializedVersion: 2
         x: 11
@@ -124,19 +140,29 @@ TextureImporter:
         width: 27
         height: 9
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0.5, y: 0.5}
+=======
+      pivot: {x: 0, y: 0}
+>>>>>>> master
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 395c65e708c426247842552c8001987c
       internalID: -594299244
+=======
+      spriteID: ff23314eb81c4694f822025bf008d2e3
+      internalID: 366989732
+>>>>>>> master
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Buttons_1
       rect:
         serializedVersion: 2
@@ -146,18 +172,35 @@ TextureImporter:
         height: 16.666666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+=======
+      name: back_button
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 22
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> master
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: d68605dac8a1c51438883e5f71e69a12
       internalID: 520336333
+=======
+      spriteID: 2ef758b9164270947aaadd09ad857561
+      internalID: 1187279554
+>>>>>>> master
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Buttons_2
       rect:
         serializedVersion: 2
@@ -167,13 +210,29 @@ TextureImporter:
         height: 16.666666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+=======
+      name: contact_button
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 50
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> master
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 595bb7590e8a66d4aa7cce28c1a44c81
       internalID: 1055496119
+=======
+      spriteID: c95b1e2f6204be7468a8f38d18f2717f
+      internalID: -338445451
+>>>>>>> master
       vertices: []
       indices: 
       edges: []
@@ -189,9 +248,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       Buttons_2: 1055496119
       Buttons_0: -594299244
       Buttons_1: 520336333
+=======
+      back_button: 1187279554
+      save_button: 366989732
+      contact_button: -338445451
+>>>>>>> master
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
