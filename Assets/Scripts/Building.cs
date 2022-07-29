@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+// using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Building : MonoBehaviour
@@ -13,7 +14,7 @@ public class Building : MonoBehaviour
     public string buildingSceneName;
     public string tutorialSceneName;
     
-    public Building(string buildingSceneName, string tutorialSceneName, bool firstVisit )
+    public Building(string buildingSceneName, string tutorialSceneName )
     {
         this.firstVisit = true;
         this.buildingSceneName = buildingSceneName;
@@ -25,8 +26,9 @@ public class Building : MonoBehaviour
         if (firstVisit )
         {
             Debug.Log("Starting Tutorial Scene");
+            //SceneManager.LoadScene(tutorialSceneName);
             firstVisit = false;
-            SceneManager.LoadScene(tutorialSceneName);
+            SceneManager.LoadScene(buildingSceneName);
         }
         else
         {

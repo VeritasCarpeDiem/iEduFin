@@ -242,7 +242,6 @@ MonoBehaviour:
   firstVisit: 1
   buildingSceneName: TestBuildingScene
   tutorialSceneName: TestTutorialScene
-  buildingName: raccoonBuilding
 --- !u!212 &359896793
 SpriteRenderer:
   m_ObjectHideFlags: 0
