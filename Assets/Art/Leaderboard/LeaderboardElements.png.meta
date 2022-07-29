@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fileFormatVersion: 2
 guid: 32856c37242cc77449726557f93ac196
 TextureImporter:
@@ -96,3 +97,8 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+﻿fileFormatVersion: 2
+guid: 507db5f80c464ff78db199ab13319e29
+timeCreated: 1658523368
+>>>>>>> ArtandAudio

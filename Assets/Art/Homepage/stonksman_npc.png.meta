@@ -1,8 +1,15 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 609ebbe171e64c3408ad42004dade06d
 =======
 guid: cca9108077195134489356a8f2bc0495
+>>>>>>> ArtandAudio
+=======
+guid: cca9108077195134489356a8f2bc0495
+=======
+guid: 609ebbe171e64c3408ad42004dade06d
+>>>>>>> master
 >>>>>>> ArtandAudio
 TextureImporter:
   internalIDToNameTable: []
@@ -38,9 +45,16 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     filterMode: 1
 =======
     filterMode: 0
+>>>>>>> ArtandAudio
+=======
+    filterMode: 0
+=======
+    filterMode: 1
+>>>>>>> master
 >>>>>>> ArtandAudio
     aniso: 1
     mipBias: 0
@@ -78,7 +92,10 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ArtandAudio
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -115,6 +132,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
+>>>>>>> ArtandAudio
+=======
+=======
+>>>>>>> master
 >>>>>>> ArtandAudio
     textureCompression: 1
     compressionQuality: 50

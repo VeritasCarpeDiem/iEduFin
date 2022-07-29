@@ -1,8 +1,15 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: c03dc2f07a2b42c4986c2de0cd7b33fd
 =======
 guid: f110d3814111e8643bedebadc14d301c
+>>>>>>> ArtandAudio
+=======
+guid: f110d3814111e8643bedebadc14d301c
+=======
+guid: c03dc2f07a2b42c4986c2de0cd7b33fd
+>>>>>>> master
 >>>>>>> ArtandAudio
 TextureImporter:
   internalIDToNameTable: []

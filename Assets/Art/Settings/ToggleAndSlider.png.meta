@@ -1,8 +1,15 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 0c0a8d5001d519140a52243782115fd5
 =======
 guid: 7e4fe161ca56fe44dbcfbcce893b51dd
+>>>>>>> ArtandAudio
+=======
+guid: 7e4fe161ca56fe44dbcfbcce893b51dd
+=======
+guid: 0c0a8d5001d519140a52243782115fd5
+>>>>>>> master
 >>>>>>> ArtandAudio
 TextureImporter:
   internalIDToNameTable: []
@@ -38,9 +45,16 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     filterMode: 0
 =======
     filterMode: 1
+>>>>>>> ArtandAudio
+=======
+    filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> master
 >>>>>>> ArtandAudio
     aniso: 1
     mipBias: 0
@@ -51,9 +65,16 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
 <<<<<<< HEAD
+<<<<<<< HEAD
   spriteMode: 2
 =======
   spriteMode: 1
+>>>>>>> ArtandAudio
+=======
+  spriteMode: 1
+=======
+  spriteMode: 2
+>>>>>>> master
 >>>>>>> ArtandAudio
   spriteExtrude: 1
   spriteMeshType: 1
@@ -89,6 +110,13 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+=======
+>>>>>>> ArtandAudio
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -422,10 +450,14 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+<<<<<<< HEAD
 =======
   spriteSheet:
     serializedVersion: 2
     sprites: []
+>>>>>>> ArtandAudio
+=======
+>>>>>>> master
 >>>>>>> ArtandAudio
     outline: []
     physicsShape: []
@@ -438,6 +470,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    nameFileIdTable: {}
+=======
+>>>>>>> ArtandAudio
     nameFileIdTable:
       ToggleAndSlider_6: -1205276167
       ToggleAndSlider_4: 996834005
@@ -453,8 +490,12 @@ TextureImporter:
       ToggleAndSlider_9: 120574894
       ToggleAndSlider_13: 1536687884
       ToggleAndSlider_2: 1088740580
+<<<<<<< HEAD
 =======
     nameFileIdTable: {}
+>>>>>>> ArtandAudio
+=======
+>>>>>>> master
 >>>>>>> ArtandAudio
   spritePackingTag: 
   pSDRemoveMatte: 0
