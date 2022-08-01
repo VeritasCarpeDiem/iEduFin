@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using UnityEngine;
+using UnityEngine.Android;
 
 
-    public class StockBuilding : MonoBehaviour
+public class StockBuilding : MonoBehaviour
     {
+        //TODO: Remove API Key
         private const string ApiKey = "5SO0PDYFZVGM2FC4";
         private const string BaseURL = "https://www.alphavantage.co/";
         private const string StockQuoteFunction = "GLOBAL_QUOTE";
@@ -20,34 +23,26 @@ using UnityEngine;
         }
 
         //Need to refactor getter method
-        //prints out invalid api call message if failed 
+        //TODO: Handle case where API fails 
         public async Task RequestStockQuote(string symbol)
         {
             string stockRequestURL = $"query?function={StockQuoteFunction}&symbol={symbol}&apikey={ApiKey}";
         
             var response = await this.client.GetAsync(stockRequestURL);
             var responseBody = await response.Content.ReadAsStringAsync();
+          
             this.currentStockQuote = responseBody; 
-            Debug.Log("SENT REQ JSON:");
-            Debug.Log(responseBody);
-           
-        }
 
-        //For testing, probably unecessary 
-        public String GetStockQuoteJson()
-        {
-            String toReturn = this.currentStockQuote;
-            this.currentStockQuote = null;   //reset after each call
-            return toReturn;
+            Debug.Log(responseBody);
+            
         }
+        
         //Getter Mehtod 
-        public Stock GetStockQuote()
+        public StockQuote GetStockQuote()
         {
             String toReturn = this.currentStockQuote;
-            Debug.Log("Type");
-            Debug.Log(typeof(Stock));
-            var stock = JsonUtility.FromJson<Stock>(toReturn);
-            this.currentStockQuote = null;
+            QuoteRequest quote = JsonConvert.DeserializeObject<QuoteRequest>(toReturn);
+            StockQuote stock = quote.StockQuote;
             return stock;
         }
     }
