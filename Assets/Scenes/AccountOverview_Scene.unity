@@ -1316,6 +1316,8 @@ GameObject:
   - component: {fileID: 824813327}
   - component: {fileID: 824813326}
   - component: {fileID: 824813325}
+  - component: {fileID: 824813329}
+  - component: {fileID: 824813330}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1409,6 +1411,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &824813329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824813324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9e59b95bd2a45449a08aae7eea9a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabBodies:
+  - {fileID: 1034718135}
+  - {fileID: 605620048}
+  - {fileID: 727203397}
+  tabs:
+  - {fileID: 922542762}
+  - {fileID: 1210005389}
+  - {fileID: 1779783364}
+--- !u!114 &824813330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824813324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e420c1366d6c8e47a7c74162141e9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &860379671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1737,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 922542765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824813329}
+        m_TargetAssemblyTypeName: AcctOverview_TabManager, Assembly-CSharp
+        m_MethodName: OnTabSwitch
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1034718135}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 824813329}
+        m_TargetAssemblyTypeName: AcctOverview_TabManager, Assembly-CSharp
+        m_MethodName: ChangeTabColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 922542762}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &922542765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2251,7 +2309,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1210005392}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824813329}
+        m_TargetAssemblyTypeName: AcctOverview_TabManager, Assembly-CSharp
+        m_MethodName: OnTabSwitch
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 605620048}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 824813329}
+        m_TargetAssemblyTypeName: AcctOverview_TabManager, Assembly-CSharp
+        m_MethodName: ChangeTabColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1210005389}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1210005392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2265,7 +2347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3072,7 +3154,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1779783367}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824813329}
+        m_TargetAssemblyTypeName: AcctOverview_TabManager, Assembly-CSharp
+        m_MethodName: OnTabSwitch
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 727203397}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 824813329}
+        m_TargetAssemblyTypeName: AcctOverview_TabManager, Assembly-CSharp
+        m_MethodName: ChangeTabColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1779783364}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1779783367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3086,7 +3192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8117647, g: 0.8117647, b: 0.8117647, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3316,7 +3422,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1927495641}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824813330}
+        m_TargetAssemblyTypeName: LoadMainMapBtn, Assembly-CSharp
+        m_MethodName: LoadMainMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1927495641
 MonoBehaviour:
   m_ObjectHideFlags: 0
