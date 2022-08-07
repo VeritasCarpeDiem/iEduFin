@@ -10,9 +10,14 @@ public class StockViewContainer : MonoBehaviour
     [SerializeField] public TextMeshProUGUI stockText;
     [SerializeField] public TextMeshProUGUI  changeText;
     [SerializeField] public TextMeshProUGUI  priceText;
-    void Start()
+    public StockQuote stock;
+   public void click()
     {
-        
+        Debug.Log("DISPLAYING STOCK");
+        Debug.Log(stockText.text);
+        Debug.Log(changeText.text);
+        Debug.Log(priceText.text);
+        Debug.Log(stock.Symbol);
     }
 
 }

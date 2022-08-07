@@ -24,6 +24,7 @@ public class StockSceneHandler : MonoBehaviour
     //private List<StockQuote> stockList;
     [SerializeField] private GameObject stockTextPrefab;
     [SerializeField] private Transform stockTextParent;
+    private StockQuote currStock;
         void  Start()
         {
             stockBuilding = GameObject.FindWithTag("StockBuilding").GetComponent<StockBuilding>();
@@ -33,14 +34,14 @@ public class StockSceneHandler : MonoBehaviour
        async void DisplayStocks()
        {
           
-           for (int i = 0; i < this.StocksToDisplay.Length; i++)
+           for (int i = 0; i < 5; i++)
            {  
                
                await stockBuilding.RequestStockQuote(this.StocksToDisplay[i]);
                StockQuote s = stockBuilding.GetStockQuote();
                
                GameObject stockTextObj = Instantiate(stockTextPrefab, stockTextParent);
-               
+               stockTextObj.GetComponent<StockViewContainer>().stock = s;
                stockTextObj.GetComponent<StockViewContainer>().stockText.text = s.Symbol;
                stockTextObj.GetComponent<StockViewContainer>().changeText.text = s.ChangePercent;
                

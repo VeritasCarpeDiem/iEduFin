@@ -45,6 +45,14 @@ public class StockBuilding : MonoBehaviour
             StockQuote stock = quote.StockQuote;
             return stock;
         }
+        public String GetStockTimeSeries(string typeOfSeries)
+        {
+            // String toReturn = this.currentStockQuote;
+            // QuoteRequest quote = JsonConvert.DeserializeObject<QuoteRequest>(toReturn);
+            // StockQuote stock = quote.StockQuote;
+            // return stock;
+            return "";
+        }
     }
  
 

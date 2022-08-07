@@ -24,6 +24,5 @@ public class StockSearchBtn : MonoBehaviour
         task.Wait(); 
         
         var stock  = stockBuilding.GetStockQuote();
-        
     }
 }
