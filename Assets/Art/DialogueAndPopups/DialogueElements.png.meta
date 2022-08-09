@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86a263bc82002a74c869a08b9f7e8389
-      internalID: 864704389
+      spriteID: 693ae5c75be17924cbee35733a7f2a02
+      internalID: -1600369196
       vertices: []
       indices: 
       edges: []
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a03c0f8b1af64c143b8c66939fc3c2da
-      internalID: -1585795683
+      spriteID: 48cf0fa6a49221c44b3ef7b264074f6b
+      internalID: 227659884
       vertices: []
       indices: 
       edges: []
@@ -161,10 +161,10 @@ TextureImporter:
       name: DialogueElements_2
       rect:
         serializedVersion: 2
-        x: 38
-        y: 5
-        width: 5
-        height: 7
+        x: 4
+        y: 4
+        width: 24
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +172,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd421326059dac74b8a553c316152407
-      internalID: 935525159
+      spriteID: f526879307dc6f844ba35d8caa4c4ed9
+      internalID: 1454346365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueElements_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 5
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3045b1744d74c8e4881314ac12844771
+      internalID: -1788213774
       vertices: []
       indices: 
       edges: []
@@ -189,9 +210,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DialogueElements_2: 935525159
-      DialogueElements_1: -1585795683
-      DialogueElements_0: 864704389
+      DialogueElements_2: 1454346365
+      DialogueElements_1: 227659884
+      DialogueElements_3: -1788213774
+      DialogueElements_0: -1600369196
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
