@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StockViewContainer : MonoBehaviour
@@ -12,7 +13,8 @@ public class StockViewContainer : MonoBehaviour
     [SerializeField] public TextMeshProUGUI  priceText;
     public StockQuote stock;
    public void click()
-    {
+   {
+       SceneManager.LoadScene("StockDataScene");
         Debug.Log("DISPLAYING STOCK");
         Debug.Log(stockText.text);
         Debug.Log(changeText.text);
