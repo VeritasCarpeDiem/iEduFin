@@ -87,7 +87,7 @@ namespace DefaultNamespace
                 
                 //TODO: Add aforementioned code between here 
                 
-                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share ";
+                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n \n New Account Balance: $";
                 Debug.Log("Total: " + quantityPrice.text);
 
             }
@@ -95,7 +95,7 @@ namespace DefaultNamespace
             else
             { 
                 //TODO: add condition to check if user owns atleast N shares of stock, if so allow sell and add total to acc balance, create transaction, push to history and update owned
-                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n \n New Account Balance: ";
+                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n \n New Account Balance: $";
                 
                 Debug.Log("Total: " + quantityPrice.text);
                 
