@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using DefaultNamespace;
 using Newtonsoft.Json;
@@ -14,8 +15,8 @@ using UnityEngine.UI;
 
 public class NewLoginBtn : UnityEngine.MonoBehaviour
 {
-    [SerializeField] private string authenticationEndpoint = "http://localhost:13756/account/login";
-    
+    [SerializeField] private string authenticationEndpoint = "http://132.249.242.242/account/login";
+
     [SerializeField] private TMP_InputField usernameInput;
     [SerializeField] private TMP_InputField passwordInput;
     [SerializeField] private TextMeshProUGUI alertText;
@@ -27,11 +28,12 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
     {
         Debug.Log("test");
         await TryLogin();
-    Debug.Log("test");
+    Debug.Log("test end");
     }
     async Task TryLogin()
     {
-        string username = usernameInput.text;
+    //add email here maybe 
+        string username = usernameInput.text.ToLower();
         string password = passwordInput.text;
         alertText.text = "Signing in...";
         this.loginButton.interactable = false;
@@ -40,7 +42,7 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
         {
             Debug.Log("in try ");
             this.client.BaseAddress = new Uri(this.authenticationEndpoint);
-            
+            Debug.Log(this.client.BaseAddress);
             string requrl = $"?rusername={username}&rpassword={password}";
             
             var loginCredentials = new Dictionary<string, string>()
@@ -60,13 +62,14 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
             }
             else
             {
+                //maybe instantiate a global account here with same fields + account info 
                 GameAccount returnedAccount = JsonUtility.FromJson<GameAccount>(respBody);
                 alertText.text = $"Welcome {returnedAccount.username}";
                 Debug.Log("here");
                 Debug.Log(response);
                 Debug.Log(respBody);
             }
-            Debug.Log(respBody);
+            //Debug.Log(respBody);
         }
         catch (HttpRequestException e) 
         { this.loginButton.interactable = true;
@@ -74,6 +77,8 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
             throw;
         }
     }
+
+
 
 }
 

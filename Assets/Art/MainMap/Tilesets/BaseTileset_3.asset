@@ -12,11 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: BaseTileset_3
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_Sprite: {fileID: -1074856831, guid: 069a6ce6f2ca72f4388b862437a19b21, type: 3}
-=======
   m_Sprite: {fileID: -746017030, guid: 3d55f07efff93ee4fb05efa7b48332df, type: 3}
->>>>>>> MainMapTiles
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

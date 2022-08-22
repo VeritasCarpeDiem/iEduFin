@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StockDataScene.unity
     guid: f532cdb99b07fbe4e82ba99ce9e80c0f
+  - enabled: 1
+    path: Assets/Scenes/CreateAccountScene.unity
+    guid: 4fa6bd1b67920df40989fc1ef623cd01
+  - enabled: 1
+    path: Assets/Scenes/newloginScene.unity
+    guid: eaa247c071c5dd54a892ce2e245b6e63
   m_configObjects: {}
