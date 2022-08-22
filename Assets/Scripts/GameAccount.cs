@@ -4,6 +4,6 @@
     {
         public string _id;
         public string username;
-        
+        public string email;  
     }
 }
