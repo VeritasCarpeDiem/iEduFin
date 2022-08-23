@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using DefaultNamespace;
+using Newtonsoft.Json;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,7 +14,7 @@ using UnityEngine.UI;
 public class AccountCreation : MonoBehaviour
     {
         //CREATE A POP UP WINDOW HERE 
-        [SerializeField] private string authenticationEndpoint = "http://localhost:13756/account/create";
+        [SerializeField] private string authenticationEndpoint = "http://localhost:13756";
         // should be changed to "http://132.249.242.242/account/create"
         [SerializeField] private TMP_InputField emailInput;
         [SerializeField] private TMP_InputField usernameInput;
@@ -21,14 +23,15 @@ public class AccountCreation : MonoBehaviour
         [SerializeField] private TextMeshProUGUI alertText;
         [SerializeField] private Button createButton;
         [SerializeField] private TextMeshProUGUI warningText;
-        
+        const string CREATION_ENDPOINT = "/account/create";
+        private const string PLAYERDATA_ENDPOINT = "/account/data"; 
         private HttpClient client = new HttpClient();
         //create and populate default player data here 
         public async void onClickCreate()
         {
-            Debug.Log("test create ");
+     
             await TryCreate();
-            Debug.Log("Done w create");
+
         }
 
         public async Task TryCreate()
@@ -39,6 +42,12 @@ public class AccountCreation : MonoBehaviour
             string email = emailInput.text.ToLower();
             alertText.text = "Creating Account";
             this.createButton.interactable = false;
+            if (username.Contains(" "))
+            {
+                alertText.text = "Invalid username, no spaces allowed";
+                this.createButton.interactable = true; 
+                return;
+            }
             if (!isValidEmail(email))
             {
                 alertText.text = "Please enter a valid email";
@@ -55,6 +64,7 @@ public class AccountCreation : MonoBehaviour
 
             try
             {
+                
                 this.client.BaseAddress = new Uri(this.authenticationEndpoint);
 
                 var accountCredentials = new Dictionary<string, string>()
@@ -65,25 +75,49 @@ public class AccountCreation : MonoBehaviour
                     { "rpassword", password }
                 };
                 var data = new FormUrlEncodedContent(accountCredentials);
-                var response = await client.PostAsync(new Uri(this.authenticationEndpoint), data);
+                var response = await client.PostAsync(new Uri(this.authenticationEndpoint + CREATION_ENDPOINT), data);
+            
                 var respBody = await response.Content.ReadAsStringAsync();
                 if ((int)response.StatusCode == 409)
                 {
                     this.createButton.interactable = true;
                     alertText.text = respBody;
                 }
+                
+                //once account is created
                 else
                 {
-                    Debug.Log("Account has been created please return to log in ");
+                    //successful account creation, create default account 
+                    //String class: string username: string serializedjson : string 
+                    //TODO: once basic functionality is implemented, add class selection option
+                    PlayerAccountData playerAcc = new PlayerAccountData(username);
+                    string serializedAcc = JsonConvert.SerializeObject(playerAcc);
+                    
+                    //post default account to appropriate route
+                    var postPlayerData = new Dictionary<string, string>()
+                    {
+                        {"username", username},
+                        {"serializedData",serializedAcc},
+                        // {"Selected Character",characterSelected}
+                    };
+                    var accData = new FormUrlEncodedContent(postPlayerData);
+                    var accResponse = await client.PostAsync(new Uri(this.authenticationEndpoint + PLAYERDATA_ENDPOINT), accData);
+                    var accRespBody = await accResponse.Content.ReadAsStringAsync();
+                    PlayerAccountData newObj = JsonConvert.DeserializeObject<PlayerAccountData>(accRespBody);
+                    
+                    //Destroy additional AccountManager gameobject that is created
+                    GameObject acDestroy = GameObject.FindWithTag("AccountManager");
+                    Destroy(acDestroy);
+                    
                     alertText.text ="Account has been created please return to log in";
                 }
 
             }
-            catch(HttpRequestException e)
+            catch(Exception e)
             {
                 this.createButton.interactable = true;
                 alertText.text = "could not connect to server";
-                throw;
+                return;
             }
            
 

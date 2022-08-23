@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 502de61935c146a2a652f6c9e58411f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  authenticationEndpoint: http://localhost:13756/account/create
+  authenticationEndpoint: http://localhost:13756
   emailInput: {fileID: 969747658}
   usernameInput: {fileID: 1304831586}
   passwordInput: {fileID: 1174130679}

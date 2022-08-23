@@ -8,13 +8,13 @@ using UnityEngine.Rendering.VirtualTexturing;
     public class Transaction
     {
         //Stock or crypto 
-        private string transactionType;
+        public string transactionType;
         //buy or sell
-        private string action;
-        private string itemName;
-        private int quantity;
-        private decimal price;
-        private DateTime transactionDate;
+        public string action;
+        public string itemName;
+        public int quantity;
+        public decimal price;
+        public DateTime transactionDate;
 
         public Transaction(string transactionType,string action, string itemName, int quantity, decimal price, DateTime date)
         {
@@ -22,6 +22,7 @@ using UnityEngine.Rendering.VirtualTexturing;
             this.itemName = itemName;
             this.quantity = quantity;
             this.price = price;
+            this.action = action;
             this.transactionDate = date;
         }
     }
