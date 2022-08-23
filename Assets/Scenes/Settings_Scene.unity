@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -724,6 +724,7 @@ GameObject:
   - component: {fileID: 1029626226}
   - component: {fileID: 1029626225}
   - component: {fileID: 1029626224}
+  - component: {fileID: 1029626227}
   m_Layer: 5
   m_Name: 'BackButton '
   m_TagString: Untagged
@@ -794,7 +795,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1029626225}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1029626227}
+        m_TargetAssemblyTypeName: LoadNewSceneBtn, Assembly-CSharp
+        m_MethodName: LoadHomepage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1029626225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,6 +846,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029626222}
   m_CullTransparentMesh: 1
+--- !u!114 &1029626227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029626222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb62d5ef3be471cae277b868742e7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1174923223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,6 +1958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2060533875}
   - component: {fileID: 2060533876}
+  - component: {fileID: 2060533877}
   m_Layer: 5
   m_Name: MusicSlider
   m_TagString: Untagged
@@ -2010,10 +2036,35 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2060533877}
+        m_TargetAssemblyTypeName: VolumeManager, Assembly-CSharp
+        m_MethodName: ChangeVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2060533877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060533874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0882c819b21cfa44c9809077c8b74ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolumeSlider: {fileID: 2060533876}
 --- !u!1 &2146467076
 GameObject:
   m_ObjectHideFlags: 0
