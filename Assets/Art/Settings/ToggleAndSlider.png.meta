@@ -1,16 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
 guid: 0c0a8d5001d519140a52243782115fd5
-=======
-guid: 7e4fe161ca56fe44dbcfbcce893b51dd
->>>>>>> ArtandAudio
-=======
-guid: 7e4fe161ca56fe44dbcfbcce893b51dd
-=======
-guid: 0c0a8d5001d519140a52243782115fd5
->>>>>>> master
->>>>>>> ArtandAudio
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,38 +33,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
     filterMode: 0
-=======
-    filterMode: 1
->>>>>>> ArtandAudio
-=======
-    filterMode: 1
-=======
-    filterMode: 0
->>>>>>> master
->>>>>>> ArtandAudio
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> ArtandAudio
-=======
-  spriteMode: 1
-=======
-  spriteMode: 2
->>>>>>> master
->>>>>>> ArtandAudio
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,34 +62,26 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-=======
->>>>>>> ArtandAudio
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,154 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ToggleAndSlider_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 40
-        width: 5
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 919468d015f1c3f44a2457b744ccad33
-      internalID: 1088740580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_3
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 40
-        width: 5
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0050b9b2b0c05d843ba28d0d4dc41840
-      internalID: -1268842664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_4
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 39
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d17bd0e63668b641a5691b636737057
-      internalID: 996834005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_5
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 39
-        width: 4
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15951e1dab47ed24b80660598762106c
-      internalID: 1859559496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_6
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 39
-        width: 4
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fa683e4245fd7f4db14dc1dbdc10fef
-      internalID: -1205276167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ToggleAndSlider_0
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 40
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24f493eb81ab6b54da6af0707a2cdf9b
-      internalID: -707412820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_1
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 40
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17cb224fdd6171c4d8fca1b40275681e
-      internalID: -1771426287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_7
       rect:
         serializedVersion: 2
         x: 1
@@ -313,61 +125,19 @@ TextureImporter:
         height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d142e27c8b93cf45bcc40d3edd813f6
-      internalID: 1161656982
+      spriteID: e872cc0b3d1b88e4f96679f0d3fc4ca6
+      internalID: -1103528293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToggleAndSlider_8
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 18
-        width: 5
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7a90ed9d02d78442b3879c9804f1e8c
-      internalID: 202670897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_9
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 20
-        width: 16
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 037a2d60fae2f164b8c463a06df6e42f
-      internalID: 120574894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_10
+      name: ToggleAndSlider_1
       rect:
         serializedVersion: 2
         x: 1
@@ -376,89 +146,38 @@ TextureImporter:
         height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 743be1605fa884140bc8aa273b50831e
-      internalID: 1798003933
+      spriteID: 681357b0bd8150a45b59db6a830dd62e
+      internalID: -1782209300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToggleAndSlider_11
+      name: ToggleAndSlider_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 2
-        width: 30
+        x: 22
+        y: 18
+        width: 5
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 1, z: 1, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269a544b3c9e1be46b150f4b6ecad7db
-      internalID: -210828335
+      spriteID: 3346e75fac9505545b47d3052a13aad4
+      internalID: -948687042
       vertices: []
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_12
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 4
-        width: 16
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73ed37b4e6d4ed44e97221fec5978ab9
-      internalID: -1778220497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToggleAndSlider_13
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 39
-        width: 41
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a1978a5abd08bc4ca8d8e57b9026126
-      internalID: 1536687884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-<<<<<<< HEAD
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
->>>>>>> ArtandAudio
-=======
->>>>>>> master
->>>>>>> ArtandAudio
     outline: []
     physicsShape: []
     bones: []
@@ -469,34 +188,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    nameFileIdTable: {}
-=======
->>>>>>> ArtandAudio
     nameFileIdTable:
-      ToggleAndSlider_6: -1205276167
-      ToggleAndSlider_4: 996834005
-      ToggleAndSlider_12: -1778220497
-      ToggleAndSlider_10: 1798003933
-      ToggleAndSlider_5: 1859559496
-      ToggleAndSlider_0: -707412820
-      ToggleAndSlider_3: -1268842664
-      ToggleAndSlider_11: -210828335
-      ToggleAndSlider_7: 1161656982
-      ToggleAndSlider_8: 202670897
-      ToggleAndSlider_1: -1771426287
-      ToggleAndSlider_9: 120574894
-      ToggleAndSlider_13: 1536687884
-      ToggleAndSlider_2: 1088740580
-<<<<<<< HEAD
-=======
-    nameFileIdTable: {}
->>>>>>> ArtandAudio
-=======
->>>>>>> master
->>>>>>> ArtandAudio
+      ToggleAndSlider_0: -682610097
+      ToggleAndSlider_1: -1103528293
+      ToggleAndSlider_2: 1464469386
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
