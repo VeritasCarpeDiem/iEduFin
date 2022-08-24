@@ -1260,6 +1260,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439625430}
   m_CullTransparentMesh: 1
+--- !u!1 &539802777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539802779}
+  - component: {fileID: 539802778}
+  m_Layer: 0
+  m_Name: AccountManager
+  m_TagString: AccountManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &539802778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539802777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329476e444314e7791f73fdf91950664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAccount:
+    username: 
+  authenticationEndpoint: http://localhost:13756
+--- !u!4 &539802779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539802777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9608538, y: -1.8417333, z: -10.640784}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &644768695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,7 +2837,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -3805,11 +3851,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1e2375e6674f3bbcb0d9bff6c3a272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  authenticationEndpoint: http://localhost:13756/account/login
+  authenticationEndpoint: http://localhost:13756
   usernameInput: {fileID: 1435328628}
   passwordInput: {fileID: 405793109}
   alertText: {fileID: 827096172}
   loginButton: {fileID: 2130793038}
+  accountManager: {fileID: 539802778}
 --- !u!1 &1654313366
 GameObject:
   m_ObjectHideFlags: 0

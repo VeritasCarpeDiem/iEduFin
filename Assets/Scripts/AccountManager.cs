@@ -48,14 +48,10 @@ namespace DefaultNamespace
             Debug.Log(this.authenticationEndpoint + PLAYERDATA_ENDPOINT);
             var accResponse = await client.PostAsync(new Uri(this.authenticationEndpoint + PLAYERDATA_ENDPOINT), accData);
             var accRespBody = await accResponse.Content.ReadAsStringAsync();
-            PlayerAccountData newObj = JsonConvert.DeserializeObject<PlayerAccountData>(accRespBody); 
-            Debug.Log(accRespBody);
+            //PlayerAccountData newObj = JsonConvert.DeserializeObject<PlayerAccountData>(accRespBody); 
+            //Debug.Log(accRespBody);
         }
-
-        void loadData()
-        {
-            
-        }
+        
 
         public void OnDeserialize()
         {

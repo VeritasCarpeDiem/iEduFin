@@ -76,6 +76,7 @@ namespace DefaultNamespace
             //if yes message should say purchased x shares of y at z $. and subtract z from account balance
             //maybe message under saying new account balance: check account overview for more details
             //else should say insufficient funds: account balance 
+            
             decimal currBalance = accManager.playerAccount.balance;
             int numShares = quantityInputField.text == ""? 0: int.Parse(quantityInputField.text);
             decimal sellPrice = Math.Round(this.stock.Price, 2);
@@ -83,6 +84,7 @@ namespace DefaultNamespace
             string action = "BUY";
             string transactionType = "STOCK";
             DateTime currDate = DateTime.Now;
+            
             if (dropdown.captionText.text == BUY_MESSAGE)
             {
                 //TODO: ADd condition for if balance is eneough between thsese lines of code 
@@ -91,9 +93,6 @@ namespace DefaultNamespace
                 //successful buy
                 if (currBalance >= numShares * sellPrice)
                 {
-                    
-                    Debug.Log("THIS IS HOW MUCH YOU HAVE ATM");
-                    Debug.Log(accManager.playerAccount.balance);
                     action = "BUY";
                     accManager.playerAccount.balance -= sellPrice * numShares;
                     if (accManager.playerAccount.ownedStocks.ContainsKey(itemName))
@@ -104,8 +103,6 @@ namespace DefaultNamespace
                     {
                         accManager.playerAccount.ownedStocks[itemName] = numShares;
                     }
-                    //accManager.playerAccount.transactionHistory.Add();
-                    //await accManager.saveData();
                 }
                 //failed buy
                 else
@@ -113,7 +110,7 @@ namespace DefaultNamespace
                     //Debug.Log(currBalance);
                     Debug.Log(accManager.playerAccount.username);
                     purchaseMessage.text =
-                        $"Insufficient funds \n \n Current Account Balance: {accManager.playerAccount.balance}";
+                        $"Insufficient funds \n Current Account Balance: {accManager.playerAccount.balance}";
                     return;
                 }
                 
@@ -149,10 +146,10 @@ namespace DefaultNamespace
                 else
                 {
                     purchaseMessage.text =
-                        $"CANNOT COMPLETE PURCHASE! \n \n you ownly own {numOwned} shares of {stockName.text} \n Current Account Balance: ${accManager.playerAccount.balance}";
+                        $"CANNOT COMPLETE PURCHASE! \n you ownly own {numOwned} shares of {stockName.text} \n Current Account Balance: ${accManager.playerAccount.balance}";
                 }
                 //TODO: add condition to check if user owns atleast N shares of stock, if so allow sell and add total to acc balance, create transaction, push to history and update owned
-                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n \n New Account Balance: ${accManager.playerAccount.balance}";
+                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n New Account Balance: ${accManager.playerAccount.balance}";
                 
                 Debug.Log("Total: " + quantityPrice.text);
                 
@@ -161,7 +158,7 @@ namespace DefaultNamespace
             accManager.OnDeserialize();
             //Debug.Log(playerAccount.transactionHistory.Count);
             Transaction t = new Transaction(transactionType, action, itemName, numShares, sellPrice, currDate);
-            purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n \n New Account Balance: $";
+            purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: $";
             accManager.playerAccount.transactionHistory.Add(t);
             await accManager.saveData();
             Debug.Log("Total: " + quantityPrice.text);

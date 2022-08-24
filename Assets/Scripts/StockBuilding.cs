@@ -56,25 +56,19 @@ public class StockBuilding : MonoBehaviour
         //Getter Mehtod 
         public StockQuote GetStockQuote()
         {
-            // if (this.currentStockQuote == null)
-            // {
-            //     //TODO: ADD A COMMENT ABOUT INVALID STOCK HERE 
-            //     return null;
-            // }
             try
-                {
-                    
-                    String toReturn = this.currentStockQuote;
-                    QuoteRequest quote = JsonConvert.DeserializeObject<QuoteRequest>(toReturn);
-                    StockQuote stock = quote.StockQuote;
-                    this.currentStockQuote = null;
-                    return stock;
-                }
-                catch (Exception e)
-                {
+            {
+                String toReturn = this.currentStockQuote;
+                QuoteRequest quote = JsonConvert.DeserializeObject<QuoteRequest>(toReturn);
+                StockQuote stock = quote.StockQuote;
+                this.currentStockQuote = null;
+                return stock;
+            }
+            catch (Exception e)
+            {
                     //TODO: ADD A COMMENT ABOUT INVALID STOCK HERE 
                     return null;
-                }
+            }
         }
 
         public String GetStockTimeSeries(string typeOfSeries)

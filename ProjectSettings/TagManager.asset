@@ -8,6 +8,8 @@ TagManager:
   - StockTextContainer
   - CurrStock
   - AccountManager
+  - CurrCrypto
+  - CryptoBuilding
   layers:
   - Default
   - TransparentFX

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu_Scene.unity
     guid: 03a9db0c41c5642abad0d542eff94d09
+  - enabled: 1
+    path: Assets/Scenes/TestMap2.unity
+    guid: fbc67f75464d58d4989b4da2df06269d
   m_configObjects: {}
