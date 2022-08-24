@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InfoBooth_Controller : MonoBehaviour
 {
     [SerializeField] private GameObject[] scenes;
+    //[SerializeField] private GameObject displayBG;
+    //[SerializeField] private GameObject displayScreen;
 
     public void onSwitch(GameObject scene)
     {
@@ -45,9 +48,10 @@ public class InfoBooth_Controller : MonoBehaviour
 
     }
 
-    public void onClickETF(GameObject scene)
+    public void onClickETF(GameObject screen)
     {
-        scene.SetActive(true);
+        screen.SetActive(true);
+        
         GameObject.Find("DisplayAreaBackground").SetActive(true);
         GameObject.Find("ChoicesScreen2.1").SetActive(false);
         GameObject.Find("DefaultBackground").SetActive(false);
@@ -69,12 +73,36 @@ public class InfoBooth_Controller : MonoBehaviour
         
     }
 
+    public void testETFOption(GameObject screen)
+    {
+        screen.SetActive(true);
+        screen.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Use limit orders, not market orders";
+        screen.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
+            "Limit orders allow you to set the price at which you are willing to trade, " +
+            "while market orders will be executed at the current market price as soon as shares are available. " +
+            "Market orders present the risk of paying an undesirable price, as the market price can change due to events " +
+            "that are out of your control. Limit orders provide investors with greater control over their execution price.";
+        GameObject.Find("ETF_choice").SetActive(false);
+        GameObject.Find("DisplayAreaBackground").SetActive(false);
+            
+    }
+
+    public void testSetBackground(GameObject newBg)
+    {
+        newBg.SetActive(true);
+    }
+    
+    public void testSetScreen(GameObject newScreen)
+    {
+        newScreen.SetActive(true);
+    }
+
     public void onCickETFBtn2(GameObject scene)
     {
         scene.SetActive(true);
         GameObject.Find("DisplayAreaScreen(Alt)").SetActive(true);
-        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(1).GetComponent<TextMesh>().text = "Do not trade when the market is volatile";
-        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(0).transform.GetChild(0).GetComponent<TextMesh>().text = "The market tends to be particularly volatile during the first and l" +
+        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Do not trade when the market is volatile";
+        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "The market tends to be particularly volatile during the first and l" +
             "ast 15 minutes of the trading day so, generally speaking, it’s a good idea to avoid trading during that time. " +
             "In the morning, ETFs are going through a “price discovery” phase — comparing the previous day’s closing price with the " +
             "current net asset value price, and, at the same time, factoring in changes to the value of the underlying holdings. " +
@@ -173,7 +201,7 @@ public class InfoBooth_Controller : MonoBehaviour
     {
         scene.SetActive(true);
         GameObject.Find("DisplayAreaScreen(Alt)").SetActive(true);
-        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(1).GetComponent<TextMesh>().text = "Take Care of Your Wallet";
+        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(1).GetComponent<TextMesh>().text = "Take care of your wallet";
         GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(0).transform.GetChild(0).GetComponent<TextMesh>().text = "The purchased cryptocurrency needs to be stored somewhere. " +
             "Ways and the options are endless, but first, you need to know about two types: light and heavy purses. If you are going to buy a “souvenir” amount of currency, the safety of which you will not " +
             "have nightmares about, the light purse, available directly from your phone, is a great option. It is best to choose a proven solution with a good rating and reviews, just like FoPay. " +
