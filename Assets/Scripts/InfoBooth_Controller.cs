@@ -6,8 +6,6 @@ using TMPro;
 public class InfoBooth_Controller : MonoBehaviour
 {
     [SerializeField] private GameObject[] scenes;
-    //[SerializeField] private GameObject displayBG;
-    //[SerializeField] private GameObject displayScreen;
 
     public void onSwitch(GameObject scene)
     {
@@ -218,7 +216,7 @@ public class InfoBooth_Controller : MonoBehaviour
         scene.SetActive(true);
         GameObject.Find("DisplayAreaScreen(Alt)").SetActive(true);
         GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(1).GetComponent<TextMesh>().text = "Do not buy the cryptocurrency at the point of “take-off”";
-        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(0).transform.GetChild(0).GetComponent<TextMesh>().text = "THearing from a friend or your favorite crypto Magazine that bitcoin has set a " +
+        GameObject.Find("DisplayAreaScreen(Alt)").transform.GetChild(0).transform.GetChild(0).GetComponent<TextMesh>().text = "Hearing from a friend or your favorite crypto Magazine that bitcoin has set a " +
             "new growth record, do not hurry to register a wallet and look for an exchange office. Any cryptocurrency after a sharp rise either going through a correction or a strong enough fall. " +
             "But in any case, the chance that you will have time to run into a rushing train is always less than the chance that the idea will end in failure and disappointment. It is much more reasonable to wait for the " +
             "moment of decline in your chosen currency and buy it at the lowest price.";

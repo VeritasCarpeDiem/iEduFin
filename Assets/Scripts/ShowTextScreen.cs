@@ -8,12 +8,14 @@ public class ShowTextScreen : MonoBehaviour
 {
     [SerializeField] private List<GameObject> etfButtons;
     [SerializeField] private List<GameObject> cryptoButtons;
-    [SerializeField] private GameObject currentScreen;
-    [SerializeField] private GameObject nextScreen;
+    [SerializeField] private GameObject etfChoiceScreen;
+    [SerializeField] private GameObject cryptoChoiceScreen;
+    [SerializeField] private GameObject newScreen;
     [SerializeField] private GameObject currentBg;
-    [SerializeField] private GameObject nextBg;
+    [SerializeField] private GameObject newBg;
 
-    public string screenTitle = "Tip";
+    private string screenTitle = "Tip";
+    private GameObject currentScreen;
 
     private string[] etfContents =
     {
@@ -70,47 +72,84 @@ public class ShowTextScreen : MonoBehaviour
 
     private string[] cryptoContents =
     {
-        "Use limit orders, not market orders",
-        "Do not trade when the market is volatile",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        //Index 0
+        "The purchased cryptocurrency needs to be stored somewhere. " +
+        "First, you need to know about two types: light and heavy purses. If you are going to buy a “souvenir” amount of currency (where you're not going to worry about it's safety " +
+        ", the light purse (available from your phone) is a great option. It's best to choose a proven solution with a good rating and reviews (like FoPay). " +
+        "Important — before making the final choice we advise you to make sure that the wallet allows you to transfer the account or wallet to another device, and you are satisfied with the rate of inputting or outputting the currency. " +
+        "If you have a significant amount on hand, that has been accumulated over several years and want to transfer it to digital coins, here we advise you to spend time reading the instructions and allocate " +
+        "space on your hard drive for the installation of a full (heavy) wallet for the selected cryptocurrency. This is the most secure option, as in fact, you download all your coins to your PC, where they are stored " +
+        "and regularly communicate with the server for verification.",
+        
+        //Index 1
+        "Hearing from a friend or your favorite crypto magazine that bitcoin has set a " +
+        "new growth record, do not hurry to register a wallet and look for an exchange office. Any cryptocurrency after a sharp rise either going through a correction or a strong enough fall. " +
+        "But in any case, the chance that you will have time to run into a rushing train is always less than the chance that the idea will end in failure and disappointment. It is much more reasonable to wait for the " +
+        "moment of decline in your chosen currency and buy it at the lowest price.",
+        
+        //Index 2
+        "For you, there are still available exchanges — Bitfinex, WEX, (the same BTC-e), YoBit and others. If you are going to trade currency, the exchange suits you the most." +
+        " Choose the platform that supports convenient payment methods, and after the purchase, you can choose any other for trading, at least the same Hotbit." +
+        "\nIf you just want to convert the accumulated fiat currency into cryptocurrency, we can advise you to use the LocalBitcoins website. Here you can choose a seller geographically close to you and arrange a personal meeting. " +
+        "This option provides safety and is so popular because of the ability to pay in any way you have agreed (even in cash)." + 
+        " And as a result, despite the commission, it is often still more profitable than throwing money to third-party payment systems, especially foreign.",
+
+        //Index 3
+        "This is a very important piece of advice that we recommend you to listen to. Often, after spending large sums of money to buy cryptocurrency, the beginner and excited owner of the digital hoarding wealth pours adrenaline into committing rash acts. " + 
+        "The slightest changes in the rate in the direction of recession terrify all newly-minted cryptocurrency investors, which is bad for their nerves and a rational understanding of the situation. " + 
+        "Bitcoin has repeatedly experienced major falls — with the first major hacker robberies, with the ban on ICO in China and even with the negative mention of the coin by any serious investor. " + 
+        "But it took not even months, and often weeks and the rate has stabilized and we saw growth again. Therefore, our advice to you is just to buy bitcoins (and FOINs) and do nothing else, at least for some time.",
+
+        //Index 4
+        "No one can say for sure what will happen to Bitcoin in a year, " +
+        "five years or a quarter of a century. However, only the Bitcoin (cryptocurrency) has the highest credibility today. Dubious rumors are pushing the new traders to risky actions for the sale " +
+        "of Bitcoin and the purchase of other coins with the hope of a sharp enrichment, which does not always end this way. If you are in this category recently, we strongly recommend that you " +
+        "keep most of the investment (at least 50%) in it."
     };
 
     
     public void DisplayText(GameObject button)
     {
-        ChangeScreen();
-        
         if (etfButtons.Contains(button))
         {
+            currentScreen = etfChoiceScreen;
+            nextScreen();
+            
             int index = etfButtons.IndexOf(button);
             screenTitle = button.GetComponentInChildren<TextMeshProUGUI>().text;
-            nextScreen.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = screenTitle;
-            nextScreen.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
+            newScreen.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = screenTitle;
+            newScreen.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
                 etfContents[index];
-
         }
         else
         {
+            currentScreen = cryptoChoiceScreen;
+            nextScreen();
+            
             int index = cryptoButtons.IndexOf(button);
-            screenTitle = button.GetComponent<TextMeshProUGUI>().text;
-            nextScreen.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = screenTitle;
-            nextScreen.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
+            screenTitle = button.GetComponentInChildren<TextMeshProUGUI>().text;
+            newScreen.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = screenTitle;
+            newScreen.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
                 cryptoContents[index];
         }
     }
 
-    private void ChangeScreen()
+    private void nextScreen()
     {
         currentBg.SetActive(false);
-        nextBg.SetActive(true);
+        newBg.SetActive(true);
         
         currentScreen.SetActive(false);
-        nextScreen.SetActive(true);
+        newScreen.SetActive(true);
     }
+
+    public void prevScreen()
+    {
+        currentBg.SetActive(true);
+        newBg.SetActive(false);
+        
+        currentScreen.SetActive(true);
+        newScreen.SetActive(false);
+    }
+    
 }
