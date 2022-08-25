@@ -51,12 +51,17 @@ namespace DefaultNamespace
             }
         public void ValueChangeCheck()
         {
+            //TODO: convert to switch
             //if user deletes currrent input 
             if (quantityInputField.text == "")
             {
                 Debug.Log("EMPTY!");
                 //quantityInputField.text = "";
                 quantityPrice.text = DEFAULT_PRICE;
+            }
+            else if (quantityInputField.text == "-")
+            {
+                quantityInputField.text = "";
             }
             else if (int.Parse(quantityInputField.text) > (int.Parse(MAX_QUANTITY))) 
             {
@@ -84,6 +89,11 @@ namespace DefaultNamespace
             string action = "BUY";
             string transactionType = "STOCK";
             DateTime currDate = DateTime.Now;
+            
+            if (numShares == 0)
+            {
+                return;
+            }
             
             if (dropdown.captionText.text == BUY_MESSAGE)
             {
@@ -147,6 +157,7 @@ namespace DefaultNamespace
                 {
                     purchaseMessage.text =
                         $"CANNOT COMPLETE PURCHASE! \n you ownly own {numOwned} shares of {stockName.text} \n Current Account Balance: ${accManager.playerAccount.balance}";
+                    return;
                 }
                 //TODO: add condition to check if user owns atleast N shares of stock, if so allow sell and add total to acc balance, create transaction, push to history and update owned
                 purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n New Account Balance: ${accManager.playerAccount.balance}";
@@ -158,7 +169,7 @@ namespace DefaultNamespace
             accManager.OnDeserialize();
             //Debug.Log(playerAccount.transactionHistory.Count);
             Transaction t = new Transaction(transactionType, action, itemName, numShares, sellPrice, currDate);
-            purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: $";
+            //purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: $";
             accManager.playerAccount.transactionHistory.Add(t);
             await accManager.saveData();
             Debug.Log("Total: " + quantityPrice.text);

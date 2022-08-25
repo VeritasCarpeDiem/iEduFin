@@ -6,12 +6,13 @@ namespace DefaultNamespace
     [Serializable]
     public class PlayerAccountData
     {
+        //2x change hrer
         //equivalent to Gameaccount _id
         // private string playerID;
         // private string email;
         public string username;
         public Dictionary<string, int> ownedStocks;
-        public Dictionary<string, int> ownedCrypto;
+        public Dictionary<string, decimal> ownedCrypto;
         public List<Transaction> transactionHistory;
         public decimal balance;
         //maybe add characterName : string and characterAlreadySelected: bool field?
@@ -20,7 +21,7 @@ namespace DefaultNamespace
             this.username = username;
             ownedStocks = new Dictionary<string, int>();
             // ownedStocks.Add("aapl",1);
-            ownedCrypto = new Dictionary<string, int>();
+            ownedCrypto = new Dictionary<string, decimal>();
             transactionHistory = new List<Transaction>();
             balance = 10000;
         }

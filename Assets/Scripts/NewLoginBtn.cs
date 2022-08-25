@@ -79,7 +79,8 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
                 accountManager.playerAccount = returnedAccount;
                 alertText.text = $"Welcome {returnedAccount.username}";
                 accountManager.OnDeserialize();
-
+                GameObject ccDestroy = GameObject.FindWithTag("CurrCrypto");
+                Destroy(ccDestroy);
                 SceneManager.LoadScene("TestMap2");
             }
             //Debug.Log(respBody);

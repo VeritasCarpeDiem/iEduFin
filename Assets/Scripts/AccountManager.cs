@@ -28,7 +28,7 @@ namespace DefaultNamespace
             // }
 
         }
-
+    //1x change in desierailzize
         public async Task saveData()
         {
             //playerAccount.ownedStocks.Add("AAPL",1);
@@ -57,7 +57,7 @@ namespace DefaultNamespace
         {
             if (playerAccount.ownedCrypto == null)
             {
-                playerAccount.ownedCrypto = new Dictionary<string, int>();
+                playerAccount.ownedCrypto = new Dictionary<string, decimal>();
             }
 
             if (playerAccount.ownedStocks == null)
