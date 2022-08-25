@@ -9,6 +9,6 @@ public class Login_Button_controller : MonoBehaviour
 
     public void clicked()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(5);
     }
 }

@@ -11,18 +11,21 @@ public class SFXManager : MonoBehaviour
 
     private void Awake()
     {
-        if (sfxInstance != null && sfxInstance != this)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
+        //if (sfxInstance != null && sfxInstance != this)
+        //{
+        //    Debug.Log("destroy");
+        //    Destroy(this.gameObject);
+        //    return;
+        //}
 
+        Debug.Log("dont destroy");
         sfxInstance = this;
         DontDestroyOnLoad(this);
     }
 
     public void PlayHighlightSFX()
     {
+        Debug.Log("play sfx");
         audio.PlayOneShot(highlight);
     }
 }
