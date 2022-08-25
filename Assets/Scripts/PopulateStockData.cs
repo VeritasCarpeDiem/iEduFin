@@ -120,10 +120,10 @@ namespace DefaultNamespace
                     //Debug.Log(currBalance);
                     Debug.Log(accManager.playerAccount.username);
                     purchaseMessage.text =
-                        $"Insufficient funds \n Current Account Balance: {accManager.playerAccount.balance}";
+                        $"Insufficient funds \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                     return;
                 }
-                
+                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                 //TODO: Add aforementioned code between here 
                 
                 // purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n \n New Account Balance: $";
@@ -156,11 +156,11 @@ namespace DefaultNamespace
                 else
                 {
                     purchaseMessage.text =
-                        $"CANNOT COMPLETE PURCHASE! \n you ownly own {numOwned} shares of {stockName.text} \n Current Account Balance: ${accManager.playerAccount.balance}";
+                        $"CANNOT COMPLETE PURCHASE! \n you ownly own {numOwned} shares of {stockName.text} \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                     return;
                 }
                 //TODO: add condition to check if user owns atleast N shares of stock, if so allow sell and add total to acc balance, create transaction, push to history and update owned
-                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n New Account Balance: ${accManager.playerAccount.balance}";
+                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n New Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                 
                 Debug.Log("Total: " + quantityPrice.text);
                 
