@@ -1,16 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
 guid: 580e127dadd5fb14d81f5d415acb00e8
-=======
-guid: 73cb196475eb7324580ab502c44aa16c
->>>>>>> ArtandAudio
-=======
-guid: 73cb196475eb7324580ab502c44aa16c
-=======
-guid: 580e127dadd5fb14d81f5d415acb00e8
->>>>>>> master
->>>>>>> ArtandAudio
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -58,18 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-<<<<<<< HEAD
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 16
->>>>>>> ArtandAudio
-=======
-  spritePixelsToUnits: 16
-=======
-  spritePixelsToUnits: 100
->>>>>>> master
->>>>>>> ArtandAudio
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,25 +62,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-<<<<<<< HEAD
-    textureCompression: 1
-=======
     textureCompression: 0
->>>>>>> ArtandAudio
-=======
-    textureCompression: 0
-=======
-    textureCompression: 1
->>>>>>> master
->>>>>>> ArtandAudio
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -138,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -149,18 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-      name: save_button
-=======
       name: Buttons_0
->>>>>>> ArtandAudio
-=======
-      name: Buttons_0
-=======
-      name: save_button
->>>>>>> master
->>>>>>> ArtandAudio
       rect:
         serializedVersion: 2
         x: 11
@@ -168,130 +124,41 @@ TextureImporter:
         width: 27
         height: 9
       alignment: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> ArtandAudio
-=======
-      pivot: {x: 0.5, y: 0.5}
-=======
-      pivot: {x: 0, y: 0}
->>>>>>> master
->>>>>>> ArtandAudio
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-      spriteID: ff23314eb81c4694f822025bf008d2e3
-      internalID: 366989732
-=======
-      spriteID: 395c65e708c426247842552c8001987c
-      internalID: -594299244
->>>>>>> ArtandAudio
-=======
-      spriteID: 395c65e708c426247842552c8001987c
-      internalID: -594299244
-=======
-      spriteID: ff23314eb81c4694f822025bf008d2e3
-      internalID: 366989732
->>>>>>> master
->>>>>>> ArtandAudio
+      spriteID: 12242e8ea508d4e4985d255baba961ed
+      internalID: -628802144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-      name: back_button
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 22
-        width: 27
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-=======
-=======
->>>>>>> ArtandAudio
       name: Buttons_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 17.333334
-        width: 50
-        height: 16.666666
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
->>>>>>> ArtandAudio
-=======
-=======
-      name: back_button
-      rect:
-        serializedVersion: 2
         x: 10
         y: 22
         width: 27
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> master
->>>>>>> ArtandAudio
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-      spriteID: 2ef758b9164270947aaadd09ad857561
-      internalID: 1187279554
-=======
-      spriteID: d68605dac8a1c51438883e5f71e69a12
-      internalID: 520336333
->>>>>>> ArtandAudio
-=======
-      spriteID: d68605dac8a1c51438883e5f71e69a12
-      internalID: 520336333
-=======
-      spriteID: 2ef758b9164270947aaadd09ad857561
-      internalID: 1187279554
->>>>>>> master
->>>>>>> ArtandAudio
+      spriteID: 60fdb663188dfb342a09e7341153a646
+      internalID: -1702219844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-      name: contact_button
-=======
       name: Buttons_2
->>>>>>> ArtandAudio
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1.333334
-        width: 50
-        height: 16.666666
-      alignment: 0
-<<<<<<< HEAD
-      pivot: {x: 0, y: 0}
-=======
-      name: Buttons_2
-=======
-      pivot: {x: 0.5, y: 0.5}
-=======
-      name: contact_button
->>>>>>> ArtandAudio
       rect:
         serializedVersion: 2
         x: 0
@@ -299,34 +166,14 @@ TextureImporter:
         width: 50
         height: 9
       alignment: 0
-<<<<<<< HEAD
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> ArtandAudio
-=======
       pivot: {x: 0, y: 0}
->>>>>>> master
->>>>>>> ArtandAudio
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
-<<<<<<< HEAD
-      spriteID: c95b1e2f6204be7468a8f38d18f2717f
-      internalID: -338445451
-=======
-      spriteID: 595bb7590e8a66d4aa7cce28c1a44c81
-      internalID: 1055496119
->>>>>>> ArtandAudio
-=======
-      spriteID: 595bb7590e8a66d4aa7cce28c1a44c81
-      internalID: 1055496119
-=======
-      spriteID: c95b1e2f6204be7468a8f38d18f2717f
-      internalID: -338445451
->>>>>>> master
->>>>>>> ArtandAudio
+      spriteID: 0a0d6ccfc633f054c90bf88f4fb62351
+      internalID: -1697039180
       vertices: []
       indices: 
       edges: []
@@ -342,26 +189,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< HEAD
-<<<<<<< HEAD
-      back_button: 1187279554
-      save_button: 366989732
-      contact_button: -338445451
-=======
-      Buttons_2: 1055496119
-      Buttons_0: -594299244
-      Buttons_1: 520336333
->>>>>>> ArtandAudio
-=======
-      Buttons_2: 1055496119
-      Buttons_0: -594299244
-      Buttons_1: 520336333
-=======
-      back_button: 1187279554
-      save_button: 366989732
-      contact_button: -338445451
->>>>>>> master
->>>>>>> ArtandAudio
+      Buttons_2: -1697039180
+      Buttons_0: -628802144
+      Buttons_1: -1702219844
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - StockBuilding
+  - StockTextContainer
+  - CurrStock
+  - AccountManager
+  - CurrCrypto
+  - CryptoBuilding
   layers:
   - Default
   - TransparentFX

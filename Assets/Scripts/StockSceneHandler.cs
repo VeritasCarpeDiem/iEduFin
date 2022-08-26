@@ -19,36 +19,50 @@ public class StockSceneHandler : MonoBehaviour
     
     //these stocks should be displayed in a scrollview type object like in the wireframe
     
-    private String[] StocksToDisplay =  { "AAPL", "GOOGL","TSLA","AMZN","META" };
+    private String[] StocksToDisplay =  { "AAPL", "GOOGL","TSLA","INTC","IBM" };
     public StockBuilding stockBuilding;
     //private List<StockQuote> stockList;
     [SerializeField] private GameObject stockTextPrefab;
     [SerializeField] private Transform stockTextParent;
+    private StockQuote currStock;
+    [SerializeField]  TMP_InputField enterStockSearch;
+    [SerializeField] public TextMeshProUGUI  warningText;
         void  Start()
         {
             stockBuilding = GameObject.FindWithTag("StockBuilding").GetComponent<StockBuilding>();
             DisplayStocks();
+
+            
+          
         }
         
        async void DisplayStocks()
        {
-          
-           for (int i = 0; i < this.StocksToDisplay.Length; i++)
-           {  
-               
-               await stockBuilding.RequestStockQuote(this.StocksToDisplay[i]);
-               StockQuote s = stockBuilding.GetStockQuote();
-               
-               GameObject stockTextObj = Instantiate(stockTextPrefab, stockTextParent);
-               
-               stockTextObj.GetComponent<StockViewContainer>().stockText.text = s.Symbol;
-               stockTextObj.GetComponent<StockViewContainer>().changeText.text = s.ChangePercent;
-               
-               Decimal roundedPrice = Math.Round(s.Price, 2);
-               stockTextObj.GetComponent<StockViewContainer>().priceText.text =  "$" + roundedPrice.ToString();
 
+           for (int i = 0; i < 5; i++)
+           {
+               try
+               {
+                   await stockBuilding.RequestStockQuote(this.StocksToDisplay[i]);
+                   StockQuote s = stockBuilding.GetStockQuote();
+
+                   GameObject stockTextObj = Instantiate(stockTextPrefab, stockTextParent);
+                   stockTextObj.GetComponent<StockViewContainer>().stock = s;
+                   stockTextObj.GetComponent<StockViewContainer>().stockText.text = s.Symbol;
+                   stockTextObj.GetComponent<StockViewContainer>().changeText.text = s.ChangePercent;
+
+                   Decimal roundedPrice = Math.Round(s.Price, 2);
+                   stockTextObj.GetComponent<StockViewContainer>().priceText.text = "$" + roundedPrice.ToString();
+
+               }
+               catch (Exception e)
+               {
+                   warningText.text =
+                       "ERROR:Could not connect to server, please check internet connection. Exit building and try again.";
+                   return;
+               }
            }
-   
+
        }
 
 }
