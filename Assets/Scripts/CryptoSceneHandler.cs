@@ -6,7 +6,7 @@ namespace DefaultNamespace
 {
     public class CryptoSceneHandler : MonoBehaviour
     {
-        private string[] CryptoToDisplay =  { "BTC", "ETH","SOL","ADA","XRP" };
+        private string[] CryptoToDisplay =  { "BTC", "BNB","TRX","DOGE","ETH","SOL","ADA","XRP","LTC", "LINK","FIL"};
         public CryptoBuilding cryptoBuilding;
 
         [SerializeField] private GameObject cryptoTextPrefab;

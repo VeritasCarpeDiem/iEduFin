@@ -156,7 +156,7 @@ namespace DefaultNamespace
                 else
                 {
                     purchaseMessage.text =
-                        $"CANNOT COMPLETE PURCHASE! \n you ownly own {numOwned} shares of {stockName.text} \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                        $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {stockName.text} \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                     return;
                 }
                 //TODO: add condition to check if user owns atleast N shares of stock, if so allow sell and add total to acc balance, create transaction, push to history and update owned

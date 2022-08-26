@@ -317,7 +317,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3. How to invest in cryptocurrency
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_margin: {x: 10, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &13859498
@@ -587,7 +587,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Stock Tips
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &60695558
@@ -1435,7 +1435,7 @@ MonoBehaviour:
   m_text: The Trading Channel - The Only Technical Analysis Video You Will Ever Need
     (video)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &105326512
@@ -1909,7 +1909,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1973,7 +1973,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &123473009
@@ -2421,7 +2421,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Stonks Man
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2485,7 +2485,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -44.05847, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &150636394
@@ -3481,7 +3481,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 8. Plan ahead for panicky times.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3545,7 +3545,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &225503537
@@ -3874,7 +3874,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3938,7 +3938,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &237867695
@@ -4411,7 +4411,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Can you show me some investment tips?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4475,7 +4475,7 @@ MonoBehaviour:
   m_margin: {x: 18, y: 6, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &334882624
@@ -4929,7 +4929,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Better Men Project - Warren Buffet's 6 Rules of Investing (video)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4993,7 +4993,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &361211589
@@ -5393,7 +5393,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 7. Be aware of political and economic announcements
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5457,7 +5457,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &385924005
@@ -5830,7 +5830,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Investopedia - Investment Strategies to Learn Before Trading
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5894,7 +5894,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &405752214
@@ -6639,7 +6639,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4. Precautions
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6703,7 +6703,7 @@ MonoBehaviour:
   m_margin: {x: 10, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &462049424
@@ -6774,7 +6774,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2. Do not trade when the market is volatile
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6838,7 +6838,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &467182278
@@ -6909,7 +6909,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resources for investing in stocks (beginner)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6973,7 +6973,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &504734190
@@ -7300,7 +7300,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Which type of investment would you like to learn more about?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7364,7 +7364,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &568696384
@@ -7815,7 +7815,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Click on an option
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7879,7 +7879,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 10, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &594244637
@@ -8618,7 +8618,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back to previous screen
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8682,7 +8682,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &658516870
@@ -8867,7 +8867,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: U.S. News - 7 Things All Beginner Investors Should Know
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8931,7 +8931,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &661287063
@@ -9156,7 +9156,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back to previous screen
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9220,7 +9220,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &689024731
@@ -11224,7 +11224,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5. Your ETF data may not be complete
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11288,7 +11288,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &899932255
@@ -11512,7 +11512,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4. Watch the bid/ask spread
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11576,7 +11576,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &960776492
@@ -11704,7 +11704,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ali Abdaal - How to Invest for Beginners (video)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11768,7 +11768,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &960831897
@@ -11839,7 +11839,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resources for investing in stocks (advanced)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11903,7 +11903,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &964262286
@@ -12011,7 +12011,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Charlie Chang - How to Invest in Stocks for Beginners 2021 (video)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -12075,7 +12075,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &995268803
@@ -12780,7 +12780,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Can you show me some resources for investing?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -12844,7 +12844,7 @@ MonoBehaviour:
   m_margin: {x: 18, y: 6, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1024253579
@@ -14919,7 +14919,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14983,7 +14983,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1172634159
@@ -15422,7 +15422,7 @@ MonoBehaviour:
   m_text: 1. Day trading is only profitable in the long run when traders take it
     seriously and do their research.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -15486,7 +15486,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1192145739
@@ -16492,6 +16492,7 @@ GameObject:
   - component: {fileID: 1309275352}
   - component: {fileID: 1309275351}
   - component: {fileID: 1309275350}
+  - component: {fileID: 1309275353}
   m_Layer: 5
   m_Name: BackToMainMap_Button
   m_TagString: Untagged
@@ -16563,7 +16564,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1309275351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1309275353}
+        m_TargetAssemblyTypeName: LoadMainMapBtn, Assembly-CSharp
+        m_MethodName: LoadMainMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1309275351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16602,6 +16615,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309275348}
   m_CullTransparentMesh: 1
+--- !u!114 &1309275353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309275348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e420c1366d6c8e47a7c74162141e9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1309331578
 GameObject:
   m_ObjectHideFlags: 0
@@ -17330,7 +17355,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3. Trade ETFs with international exposure when underlying markets are open
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17394,7 +17419,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1358285691
@@ -17465,7 +17490,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resources
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17529,7 +17554,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1368136288
@@ -17600,7 +17625,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "6. Don\u2019t forget about holidays"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17664,7 +17689,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1401734873
@@ -18041,7 +18066,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Charlie Chang - 5 Investing Strategies that Changed My Life (video)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18105,7 +18130,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1429077662
@@ -18233,7 +18258,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: WhiteBoard Finance - Stock Market for Beginners (video)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18297,7 +18322,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1443342819
@@ -18523,7 +18548,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 6. Check your emotions at the door.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18587,7 +18612,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1449743204
@@ -18734,7 +18759,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3. Choose a purchase method and make sure it's reliable
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18798,7 +18823,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1461557328
@@ -19730,7 +19755,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cryptocurrency Tips
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -19794,7 +19819,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1525962905
@@ -20184,7 +20209,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4. Buy Bitcoins, hide, and calm down
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -20248,7 +20273,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1615162178
@@ -20319,7 +20344,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -20383,7 +20408,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1615595081
@@ -21550,7 +21575,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2. Do not buy the cryptocurrency at the point of "take-off"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -21614,7 +21639,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1672629911
@@ -21761,7 +21786,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1. Take care of your wallet
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -21825,7 +21850,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1694705421
@@ -22040,7 +22065,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Forbes Advisor - How to Invest in Stocks: Guide for Beginners'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -22104,7 +22129,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1705918517
@@ -22453,7 +22478,7 @@ MonoBehaviour:
   m_text: 3. Interactive Brokers and Webull are two recommended online brokers for
     day traders.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -22517,7 +22542,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1730148767
@@ -22965,7 +22990,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Click on an option
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -23029,7 +23054,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 10, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1825113144
@@ -23100,7 +23125,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1. Use limit orders, not market orders
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -23164,7 +23189,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1825898192
@@ -23824,7 +23849,7 @@ MonoBehaviour:
   m_text: 5. Some tools that day traders use to pinpoint buying points include candlestick
     chart patterns, trendlines and triangles, and volume.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -23888,7 +23913,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1901704019
@@ -24495,7 +24520,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: U.S. News - How to Invest in Stocks for Beginners
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -24559,7 +24584,7 @@ MonoBehaviour:
   m_margin: {x: 5, y: 5, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1979161759
@@ -24650,7 +24675,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: How do I get started with investing?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -24714,7 +24739,7 @@ MonoBehaviour:
   m_margin: {x: 18, y: 6, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1980866081
@@ -25056,7 +25081,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 10. Avoid trading overactivity.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -25120,7 +25145,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2003555046
@@ -25402,7 +25427,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2. How to invest in stocks (advanced)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -25466,7 +25491,7 @@ MonoBehaviour:
   m_margin: {x: 10, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2021389955
@@ -25672,7 +25697,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 9. Build up your stock positions with a minimum of risk.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -25736,7 +25761,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2025579924
@@ -26347,7 +26372,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "8. Remember, you\u2019re human"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -26411,7 +26436,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2053992446
@@ -26692,7 +26717,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5. Trade what YOU want but keep in Bitcoin
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -26756,7 +26781,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2063468598
@@ -26828,7 +26853,7 @@ MonoBehaviour:
   m_text: 4. Day traders often look at liquidity, volatility, and volume when deciding
     what stocks to buy.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -26892,7 +26917,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2070552015
@@ -26964,7 +26989,7 @@ MonoBehaviour:
   m_text: 2. Day traders must be diligent, focused, objective, and unemotional in
     their work.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -27028,7 +27053,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2071026760
@@ -27774,7 +27799,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 7. Pick companies, not stocks.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -27838,7 +27863,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2143058626

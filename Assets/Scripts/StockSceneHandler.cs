@@ -19,7 +19,11 @@ public class StockSceneHandler : MonoBehaviour
     
     //these stocks should be displayed in a scrollview type object like in the wireframe
     
-    private String[] StocksToDisplay =  { "AAPL", "GOOGL","TSLA","INTC","IBM" };
+    private String[] StocksToDisplay =
+    {
+        "AAPL", "GOOGL","TSLA","INTC","IBM","AEO","NVDA","FTCH","FTI","EXC","DNA","GRAB"
+        ,"MRK","MSFT", "META", "TWTR","TELL","SNOW","SNAP","BEKE","TJX","WBA","UBER","AMC"
+        ,"TOST"    };
     public StockBuilding stockBuilding;
     //private List<StockQuote> stockList;
     [SerializeField] private GameObject stockTextPrefab;
@@ -39,7 +43,7 @@ public class StockSceneHandler : MonoBehaviour
        async void DisplayStocks()
        {
 
-           for (int i = 0; i < 5; i++)
+           for (int i = 0; i < 25; i++)
            {
                try
                {

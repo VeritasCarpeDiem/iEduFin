@@ -118,10 +118,10 @@ namespace DefaultNamespace
                 {
                     Debug.Log(accManager.playerAccount.username);
                     purchaseMessage.text =
-                        $"Insufficient funds \n Current Balance: {Math.Round(accManager.playerAccount.balance,2)}";
+                        $"Insufficient funds \n Current Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                     return;
                 }
-                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.cryptoName.text} at ${sellPrice} per share \n New Balance: ${accManager.playerAccount.balance}";
+                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.cryptoName.text} at ${sellPrice} per share \n New Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
             }
             //case where user wants to sell
             else
@@ -147,7 +147,7 @@ namespace DefaultNamespace
                 else
                 {
                     purchaseMessage.text =
-                        $"CANNOT COMPLETE PURCHASE! \n you ownly own {numOwned} shares of {cryptoName.text} \n Current Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                        $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {cryptoName.text} \n Current Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                     return;
                 }
 
