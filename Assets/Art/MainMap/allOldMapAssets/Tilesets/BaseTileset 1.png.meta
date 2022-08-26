@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 71dd3e7aa54b36c4b8294621269ccdc3
+guid: 069a6ce6f2ca72f4388b862437a19b21
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ETFBuilding_0
+      name: BaseTileset 1_0
       rect:
         serializedVersion: 2
         x: 2
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49edef6b6d86344099da2ffc398330fe
-      internalID: 1959451652
+      spriteID: abef69983ec9d094bb1abf249ca0ebfc
+      internalID: -1790435353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_1
+      name: BaseTileset 1_1
       rect:
         serializedVersion: 2
         x: 20
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 988f70230f9314ddb9be7827f87570dd
-      internalID: -413113955
+      spriteID: dac170fead00d444fb81456571dee1ab
+      internalID: 1551276991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_2
+      name: BaseTileset 1_2
       rect:
         serializedVersion: 2
         x: 38
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88b0bfce75eab4162a6f5a17d701a4d9
-      internalID: 1447954848
+      spriteID: 0adba6e942daa794cb1ad0193d000bc9
+      internalID: -2137003717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_3
+      name: BaseTileset 1_3
       rect:
         serializedVersion: 2
         x: 56
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8b1c9f16d11e417d8ddfdc03730ed94
-      internalID: 802896752
+      spriteID: 2d7540d9e701a3649b49397f166e9bce
+      internalID: 1375857592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_4
+      name: BaseTileset 1_4
       rect:
         serializedVersion: 2
         x: 74
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdeda534d7e6a4920a49306d43228294
-      internalID: 680407725
+      spriteID: 583cf08ba09ecf641a0e7a34bca205c7
+      internalID: 1089510365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_5
+      name: BaseTileset 1_5
       rect:
         serializedVersion: 2
         x: 92
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 141b9416dca384d68a8949025913c238
-      internalID: -1643516387
+      spriteID: c5e9ae7d2c7028548bbd24ed0c61b768
+      internalID: -424448106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_6
+      name: BaseTileset 1_6
       rect:
         serializedVersion: 2
         x: 110
@@ -256,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91bf11648c09748989a46aa336d75982
-      internalID: 1362094110
+      spriteID: cd5ed64795682b2498b72eecf00fab13
+      internalID: -1804765545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_7
+      name: BaseTileset 1_7
       rect:
         serializedVersion: 2
         x: 2
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c983385111ca448a0b89d5cb4b4e6d16
-      internalID: 959054561
+      spriteID: ef657ca6ceca0a048b7ec7b0f377ff67
+      internalID: 394742221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_8
+      name: BaseTileset 1_8
       rect:
         serializedVersion: 2
         x: 20
@@ -298,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58488df5594bf4e878b7120888acc24c
-      internalID: -437482897
+      spriteID: 954309833c0f0b44f9cf8ebbe132ef3f
+      internalID: 879428291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_9
+      name: BaseTileset 1_9
       rect:
         serializedVersion: 2
         x: 38
@@ -319,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a27a17e5ad7c403e852f7116e25b512
-      internalID: 354788593
+      spriteID: f3313f3043d30224d9f9a22e5b29ec61
+      internalID: -1759662405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_10
+      name: BaseTileset 1_10
       rect:
         serializedVersion: 2
         x: 56
@@ -340,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d0523b2d3b14993abc9d9d6c154de1
-      internalID: -490699625
+      spriteID: ac7b550c8a6876f4ba21dba5004b0306
+      internalID: 1313553205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_11
+      name: BaseTileset 1_11
       rect:
         serializedVersion: 2
         x: 74
@@ -361,35 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a448c876daaef4afbb0819fb89c7ef94
-      internalID: -1673810144
+      spriteID: 681d61c234240124c81aa181b59b053f
+      internalID: -979095750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_12
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 92
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00e579b8b862f4149a2e81cb7d649965
-      internalID: 258002233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_13
+      name: BaseTileset 1_12
       rect:
         serializedVersion: 2
         x: 110
@@ -403,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d072e9e4c45a34ef9bdba1d6e7988f55
-      internalID: -298826426
+      spriteID: 85f98a681408a624097517598fa4fe51
+      internalID: 1902350601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_14
+      name: BaseTileset 1_13
       rect:
         serializedVersion: 2
         x: 2
@@ -424,14 +403,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e9ef6c352a7e405f9e3f987c97adcac
-      internalID: -475710121
+      spriteID: 8fbf02da8bc3ec3458f999aa8baf1ac0
+      internalID: -2129187111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_15
+      name: BaseTileset 1_14
       rect:
         serializedVersion: 2
         x: 20
@@ -445,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1927779e7c0d84e45b357c38fdc2ed9c
-      internalID: -521963548
+      spriteID: 002309ecd3ab20144bf8097cfb3dab49
+      internalID: -2072723082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_16
+      name: BaseTileset 1_15
       rect:
         serializedVersion: 2
         x: 38
@@ -466,14 +445,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 870139f0568c74870ba8aefe2ecf086e
-      internalID: -1447460041
+      spriteID: 1e1a27a02d1583d4f89e0e5688c70c09
+      internalID: 1552772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_17
+      name: BaseTileset 1_16
       rect:
         serializedVersion: 2
         x: 56
@@ -487,14 +466,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e141eca4674b641e2829b44d1ed5d953
-      internalID: -2135426581
+      spriteID: c5c8c17db43effa4fbcabd71b0e0108a
+      internalID: 1879579071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_18
+      name: BaseTileset 1_17
       rect:
         serializedVersion: 2
         x: 74
@@ -508,14 +487,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e69dd90b19e46fbb0f5d956a377874
-      internalID: -1699695178
+      spriteID: 9431c0c6f2e7b2e478d6335855020dae
+      internalID: 1873238276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_19
+      name: BaseTileset 1_18
       rect:
         serializedVersion: 2
         x: 92
@@ -529,14 +508,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fedf26b5a421447599dc7c208f7cfbf
-      internalID: -1062412260
+      spriteID: 04e21627eb4697b41a022a2168752bc9
+      internalID: -1339211875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_20
+      name: BaseTileset 1_19
       rect:
         serializedVersion: 2
         x: 110
@@ -550,14 +529,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6de9b13e0495747979fc0aeff67c7788
-      internalID: -1405514318
+      spriteID: 03f474a14c693d04e9970934ce1cc8bc
+      internalID: 1679516318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_21
+      name: BaseTileset 1_20
       rect:
         serializedVersion: 2
         x: 2
@@ -571,14 +550,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd890544ed97648448af8c2e9b64af32
-      internalID: 2041593072
+      spriteID: 4be9b0286214f8c43b96f73631cb0878
+      internalID: -1017665530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_22
+      name: BaseTileset 1_21
       rect:
         serializedVersion: 2
         x: 20
@@ -592,14 +571,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20b1b6ffc2a4b4c099a6ffa61b76475c
-      internalID: 1207099082
+      spriteID: 55f6574cbe91f5c45bea7821a8e5133d
+      internalID: 835155601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_23
+      name: BaseTileset 1_22
       rect:
         serializedVersion: 2
         x: 38
@@ -613,14 +592,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e7a863e5c7bb4d8b8b0d58a4685e00f
-      internalID: -1374192275
+      spriteID: 0d62bd84e1d845d4a958e1ddcc55757f
+      internalID: 1014755184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_24
+      name: BaseTileset 1_23
       rect:
         serializedVersion: 2
         x: 56
@@ -634,14 +613,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6229a876d99ca416b8994f20710605a6
-      internalID: -1986695365
+      spriteID: a9b644a09ffe3f94c8481f527be07e4b
+      internalID: 281137392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_25
+      name: BaseTileset 1_24
       rect:
         serializedVersion: 2
         x: 74
@@ -655,14 +634,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32034f1cc8db94c73890a59b123b8688
-      internalID: 21886717
+      spriteID: 05db436310c96ae429253af4df152875
+      internalID: -143053826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_26
+      name: BaseTileset 1_25
       rect:
         serializedVersion: 2
         x: 92
@@ -676,20 +655,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c88825ed571a340159e4e332665b53cf
-      internalID: -607647194
+      spriteID: 922cee45e6e60284b87ee28d5eb7a2c4
+      internalID: 1770609089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_27
+      name: BaseTileset 1_26
       rect:
         serializedVersion: 2
-        x: 110
-        y: 56
-        width: 16
-        height: 16
+        x: 109
+        y: 55
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,14 +676,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fef610f5b0a64ce6a6227a13954dd19
-      internalID: 23195629
+      spriteID: 0d08c18544958414aa16762f64d4a18a
+      internalID: -1870334512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_28
+      name: BaseTileset 1_27
       rect:
         serializedVersion: 2
         x: 2
@@ -718,14 +697,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdaddb949fa584308a49c701751640f9
-      internalID: 70872178
+      spriteID: 4dc6f6b3975129b4a89e2db75be25524
+      internalID: -23643070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_29
+      name: BaseTileset 1_28
       rect:
         serializedVersion: 2
         x: 20
@@ -739,14 +718,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c64f6d6e70fb4bab9f5e16cbc8cc90e
-      internalID: 1683154762
+      spriteID: 8ab9c0180913b7542bc12214fea826de
+      internalID: 1077282797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_30
+      name: BaseTileset 1_29
       rect:
         serializedVersion: 2
         x: 38
@@ -760,35 +739,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6c7be215fe76430bac4a969a4eaa40d
-      internalID: -1373242612
+      spriteID: 5e4b61db15d57c444b6d5a9e9f919032
+      internalID: 357417677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_31
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 38
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b34cd69ec003541f4bbef7b7a483301c
-      internalID: -2045546931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_32
+      name: BaseTileset 1_30
       rect:
         serializedVersion: 2
         x: 74
@@ -802,14 +760,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cdf3683812dc4ed9947dc1030cd9037
-      internalID: 1958163172
+      spriteID: 5fcaef69c83e8164fbc08eb01d4d9469
+      internalID: -1300903937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_33
+      name: BaseTileset 1_31
       rect:
         serializedVersion: 2
         x: 92
@@ -823,14 +781,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61f53af00e3394268ad076c44abb597c
-      internalID: -279482030
+      spriteID: e3856dc217c542b4d94d51a49854e347
+      internalID: 1992657271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_34
+      name: BaseTileset 1_32
       rect:
         serializedVersion: 2
         x: 110
@@ -844,14 +802,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d210273fb4e1441588d253b8254460de
-      internalID: -46413896
+      spriteID: bafde78661d30514da84ba87b244ef4c
+      internalID: -1029891325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_35
+      name: BaseTileset 1_33
       rect:
         serializedVersion: 2
         x: 2
@@ -865,14 +823,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a33741f7c64c47a6bccbd5904294c6f
-      internalID: -792440691
+      spriteID: 9519fa3a88107554692007759679365b
+      internalID: -1000442662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_36
+      name: BaseTileset 1_34
       rect:
         serializedVersion: 2
         x: 20
@@ -886,14 +844,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68ee0055ac91548ccaa6e10de508b14f
-      internalID: -1042693146
+      spriteID: 668e79f11f5ae8a4297a70e403b7e9b7
+      internalID: -836934403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_37
+      name: BaseTileset 1_35
       rect:
         serializedVersion: 2
         x: 38
@@ -907,35 +865,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36daf43fa2e714adc9de8192e755c3cc
-      internalID: -152203729
+      spriteID: bec6a1ee237df7743aa0aef10ea7b77e
+      internalID: 182212914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_38
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 20
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27252c2f3da504d7b8868cf003f41780
-      internalID: -547905082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_39
+      name: BaseTileset 1_36
       rect:
         serializedVersion: 2
         x: 74
@@ -949,35 +886,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cfe88bda06de4015b02468f734d9a3f
-      internalID: 1610185276
+      spriteID: ce9297349d1256f44a251f3942df0206
+      internalID: -954063195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_40
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 20
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef1d6230a447444a9aadf67ff3a09cec
-      internalID: -1600537426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_41
+      name: BaseTileset 1_37
       rect:
         serializedVersion: 2
         x: 110
@@ -991,98 +907,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0129465b85b2245d9907f16a6a5d7a3b
-      internalID: 565972891
+      spriteID: 8a0099acf4c79a7468c470020ec59a7a
+      internalID: 1319923737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_42
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 2
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e27a5f835f65a4d4ab26507f5dee1884
-      internalID: -763472628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_43
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 2
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef0540b93ff4c4c05a677bea9c511fda
-      internalID: -474272403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_44
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 2
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43a9d7eb591b74cd6ab4a20710f59c3c
-      internalID: 1736367390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_45
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 2
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1530dc45d81fc4bb09417c0030f01528
-      internalID: -50842813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ETFBuilding_46
+      name: BaseTileset 1_38
       rect:
         serializedVersion: 2
         x: 74
@@ -1096,14 +928,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d14c0f2897aca4668a92eec519ed43c9
-      internalID: 1971033497
+      spriteID: aafd8b008a90e3548afb8e0e943d29ca
+      internalID: 847492459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_47
+      name: BaseTileset 1_39
       rect:
         serializedVersion: 2
         x: 92
@@ -1117,14 +949,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed426818442684ff0a99df4b28775cf0
-      internalID: -2044626960
+      spriteID: e62c30232783ae14c81ee2a89b8a5d23
+      internalID: -420255359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ETFBuilding_48
+      name: BaseTileset 1_40
       rect:
         serializedVersion: 2
         x: 110
@@ -1138,8 +970,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caff1ad31134c4e5e833f6d4c78020a3
-      internalID: -1390818841
+      spriteID: 3e087a7897bf46b42abeb80f788f13e8
+      internalID: -1713857421
       vertices: []
       indices: 
       edges: []
@@ -1155,55 +987,47 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ETFBuilding_19: -1062412260
-      ETFBuilding_14: -475710121
-      ETFBuilding_11: -1673810144
-      ETFBuilding_2: 1447954848
-      ETFBuilding_10: -490699625
-      ETFBuilding_43: -474272403
-      ETFBuilding_29: 1683154762
-      ETFBuilding_3: 802896752
-      ETFBuilding_42: -763472628
-      ETFBuilding_40: -1600537426
-      ETFBuilding_34: -46413896
-      ETFBuilding_18: -1699695178
-      ETFBuilding_48: -1390818841
-      ETFBuilding_36: -1042693146
-      ETFBuilding_30: -1373242612
-      ETFBuilding_41: 565972891
-      ETFBuilding_45: -50842813
-      ETFBuilding_37: -152203729
-      ETFBuilding_35: -792440691
-      ETFBuilding_44: 1736367390
-      ETFBuilding_47: -2044626960
-      ETFBuilding_8: -437482897
-      ETFBuilding_0: 1959451652
-      ETFBuilding_23: -1374192275
-      ETFBuilding_27: 23195629
-      ETFBuilding_20: -1405514318
-      ETFBuilding_15: -521963548
-      ETFBuilding_16: -1447460041
-      ETFBuilding_13: -298826426
-      ETFBuilding_1: -413113955
-      ETFBuilding_7: 959054561
-      ETFBuilding_4: 680407725
-      ETFBuilding_12: 258002233
-      ETFBuilding_46: 1971033497
-      ETFBuilding_5: -1643516387
-      ETFBuilding_21: 2041593072
-      ETFBuilding_22: 1207099082
-      ETFBuilding_28: 70872178
-      ETFBuilding_32: 1958163172
-      ETFBuilding_6: 1362094110
-      ETFBuilding_24: -1986695365
-      ETFBuilding_26: -607647194
-      ETFBuilding_31: -2045546931
-      ETFBuilding_39: 1610185276
-      ETFBuilding_17: -2135426581
-      ETFBuilding_25: 21886717
-      ETFBuilding_38: -547905082
-      ETFBuilding_9: 354788593
-      ETFBuilding_33: -279482030
+      BaseTileset 1_28: 1077282797
+      BaseTileset 1_14: -2072723082
+      BaseTileset 1_21: 835155601
+      BaseTileset 1_6: -1804765545
+      BaseTileset 1_2: -2137003717
+      BaseTileset 1_23: 281137392
+      BaseTileset 1_7: 394742221
+      BaseTileset 1_11: -979095750
+      BaseTileset 1_32: -1029891325
+      BaseTileset 1_26: -1870334512
+      BaseTileset 1_31: 1992657271
+      BaseTileset 1_16: 1879579071
+      BaseTileset 1_37: 1319923737
+      BaseTileset 1_15: 1552772
+      BaseTileset 1_13: -2129187111
+      BaseTileset 1_33: -1000442662
+      BaseTileset 1_35: 182212914
+      BaseTileset 1_8: 879428291
+      BaseTileset 1_10: 1313553205
+      BaseTileset 1_29: 357417677
+      BaseTileset 1_12: 1902350601
+      BaseTileset 1_30: -1300903937
+      BaseTileset 1_22: 1014755184
+      BaseTileset 1_25: 1770609089
+      BaseTileset 1_17: 1873238276
+      BaseTileset 1_5: -424448106
+      BaseTileset 1_36: -954063195
+      BaseTileset 1_27: -23643070
+      BaseTileset 1_0: -1790435353
+      BaseTileset 1_19: 1679516318
+      BaseTileset 1_39: -420255359
+      BaseTileset 1_20: -1017665530
+      BaseTileset 1_34: -836934403
+      BaseTileset 1_40: -1713857421
+      BaseTileset 1_1: 1551276991
+      BaseTileset 1_38: 847492459
+      BaseTileset 1_24: -143053826
+      BaseTileset 1_4: 1089510365
+      BaseTileset 1_18: -1339211875
+      BaseTileset 1_9: -1759662405
+      BaseTileset 1_3: 1375857592
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -672,7 +672,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      infoBoothBuilding_25: 15751063
       infoBoothBuilding_21: 1245167424
       infoBoothBuilding_7: 1909882524
       infoBoothBuilding_18: 1523481306
@@ -696,6 +695,7 @@ TextureImporter:
       infoBoothBuilding_5: 32318428
       infoBoothBuilding_14: -3031234
       infoBoothBuilding_20: -1171931091
+      infoBoothBuilding_25: 15751063
       infoBoothBuilding_23: -965402963
       infoBoothBuilding_11: -1185796037
   spritePackingTag: 
