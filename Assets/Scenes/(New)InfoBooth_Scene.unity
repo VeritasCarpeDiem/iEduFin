@@ -1540,6 +1540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2422,7 +2423,7 @@ MonoBehaviour:
   m_text: Stonks Man
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4412,7 +4413,7 @@ MonoBehaviour:
   m_text: Can you show me some investment tips?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6910,7 +6911,7 @@ MonoBehaviour:
   m_text: Resources for investing in stocks (beginner)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7301,7 +7302,7 @@ MonoBehaviour:
   m_text: Which type of investment would you like to learn more about?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7816,7 +7817,7 @@ MonoBehaviour:
   m_text: Click on an option
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9157,7 +9158,7 @@ MonoBehaviour:
   m_text: Back to previous screen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9505,8 +9506,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Stocks tips
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11623,8 +11624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.2667, y: -375.65}
-  m_SizeDelta: {x: 1348.5334, y: 65.7}
+  m_AnchoredPosition: {x: 674.2667, y: -220.67}
+  m_SizeDelta: {x: 1348.5334, y: 31.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &960831895
 MonoBehaviour:
@@ -11705,7 +11706,7 @@ MonoBehaviour:
   m_text: Ali Abdaal - How to Invest for Beginners (video)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12012,7 +12013,7 @@ MonoBehaviour:
   m_text: Charlie Chang - How to Invest in Stocks for Beginners 2021 (video)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12103,8 +12104,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.2667, y: -289.94998}
-  m_SizeDelta: {x: 1348.5334, y: 65.7}
+  m_AnchoredPosition: {x: 674.2667, y: -169.41}
+  m_SizeDelta: {x: 1348.5334, y: 31.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &997891727
 GameObject:
@@ -12781,7 +12782,7 @@ MonoBehaviour:
   m_text: Can you show me some resources for investing?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13184,8 +13185,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cryptocurrency tips
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16059,8 +16060,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ETF (Exchange-traded fund) tips
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18259,7 +18260,7 @@ MonoBehaviour:
   m_text: WhiteBoard Finance - Stock Market for Beginners (video)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18350,8 +18351,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.2667, y: -204.25}
-  m_SizeDelta: {x: 1348.5334, y: 65.7}
+  m_AnchoredPosition: {x: 674.2667, y: -118.15}
+  m_SizeDelta: {x: 1348.5334, y: 31.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1447844825
 GameObject:
@@ -18894,8 +18895,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: General investment tips
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22066,7 +22067,7 @@ MonoBehaviour:
   m_text: 'Forbes Advisor - How to Invest in Stocks: Guide for Beginners'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -22157,8 +22158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.2667, y: -118.549995}
-  m_SizeDelta: {x: 1348.5334, y: 65.7}
+  m_AnchoredPosition: {x: 674.2667, y: -66.89}
+  m_SizeDelta: {x: 1348.5334, y: 31.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1708073995
 GameObject:
@@ -22991,7 +22992,7 @@ MonoBehaviour:
   m_text: Click on an option
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24521,7 +24522,7 @@ MonoBehaviour:
   m_text: U.S. News - How to Invest in Stocks for Beginners
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24612,8 +24613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.2667, y: -32.85}
-  m_SizeDelta: {x: 1348.5334, y: 65.7}
+  m_AnchoredPosition: {x: 674.2667, y: -15.63}
+  m_SizeDelta: {x: 1348.5334, y: 31.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1980866078
 GameObject:
@@ -24676,7 +24677,7 @@ MonoBehaviour:
   m_text: How do I get started with investing?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
