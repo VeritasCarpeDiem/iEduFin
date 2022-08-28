@@ -14402,13 +14402,13 @@ TextureImporter:
       Stockmarket_642: -1871196693
       Stockmarket_46: 1696620740
       Stockmarket_121: 1530402982
-      Stockmarket_344: -965398306
       Stockmarket_214: 1107564996
       Stockmarket_423: -419992508
       Stockmarket_589: -1862590885
       Stockmarket_172: -490662801
-      Stockmarket_211: -710788478
+      Stockmarket_344: -965398306
       Stockmarket_442: 1889859787
+      Stockmarket_211: -710788478
       Stockmarket_92: -1256567859
       Stockmarket_635: -1228889100
       Stockmarket_544: -1245900180
@@ -14723,9 +14723,9 @@ TextureImporter:
       Stockmarket_294: 1741120384
       Stockmarket_77: 595969329
       Stockmarket_300: 1169496884
+      Stockmarket_521: -1249550871
       Stockmarket_587: 1173849546
       Stockmarket_188: 744120209
-      Stockmarket_521: -1249550871
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
