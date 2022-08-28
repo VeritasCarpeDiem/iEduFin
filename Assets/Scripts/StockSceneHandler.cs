@@ -12,18 +12,7 @@ using UnityEngine.UIElements;
 
 public class StockSceneHandler : MonoBehaviour
 {
-    /*Will likely be dynamic list of all owned stocks to display to users upon entering stock market
-     Currently a hardcoded array for testing purposes, will likely be  populated by 
-     call to database later 
-     */
-    
-    //these stocks should be displayed in a scrollview type object like in the wireframe
-    
-    private String[] StocksToDisplay =
-    {
-        "AAPL", "GOOGL","TSLA","INTC","IBM","AEO","NVDA","FTCH","FTI","EXC","DNA","GRAB"
-        ,"MRK","MSFT", "META", "TWTR","TELL","SNOW","SNAP","BEKE","TJX","WBA","UBER","AMC"
-        ,"TOST"    };
+    private String[] StocksToDisplay;
     public StockBuilding stockBuilding;
     //private List<StockQuote> stockList;
     [SerializeField] private GameObject stockTextPrefab;
@@ -33,34 +22,38 @@ public class StockSceneHandler : MonoBehaviour
     [SerializeField] public TextMeshProUGUI  warningText;
         void  Start()
         {
-            stockBuilding = GameObject.FindWithTag("StockBuilding").GetComponent<StockBuilding>();
-            DisplayStocks();
+            string path = Application.dataPath + "/StockAndCryptoData/StockData.txt";
+            var data = System.IO.File.ReadAllText(path);
+            StocksToDisplay = data.Split(",");
 
+            stockBuilding = GameObject.FindWithTag("StockBuilding").GetComponent<StockBuilding>();
             
-          
+            DisplayStocks();
         }
         
        async void DisplayStocks()
        {
 
-           for (int i = 0; i < 10; i++)
+           for (int i = 0; i < StocksToDisplay.Length; i++)
            {
                try
                {
                    await stockBuilding.RequestStockQuote(this.StocksToDisplay[i]);
                    StockQuote s = stockBuilding.GetStockQuote();
+                   if (s != null)
+                   {
+                       GameObject stockTextObj = Instantiate(stockTextPrefab, stockTextParent);
+                       stockTextObj.GetComponent<StockViewContainer>().stock = s;
+                       stockTextObj.GetComponent<StockViewContainer>().stockText.text = s.Symbol;
+                       stockTextObj.GetComponent<StockViewContainer>().changeText.text = s.ChangePercent;
 
-                   GameObject stockTextObj = Instantiate(stockTextPrefab, stockTextParent);
-                   stockTextObj.GetComponent<StockViewContainer>().stock = s;
-                   stockTextObj.GetComponent<StockViewContainer>().stockText.text = s.Symbol;
-                   stockTextObj.GetComponent<StockViewContainer>().changeText.text = s.ChangePercent;
-
-                   Decimal roundedPrice = Math.Round(s.Price, 2);
-                   stockTextObj.GetComponent<StockViewContainer>().priceText.text = "$" + roundedPrice.ToString();
-
+                       Decimal roundedPrice = Math.Round(s.Price, 2);
+                       stockTextObj.GetComponent<StockViewContainer>().priceText.text = "$" + roundedPrice.ToString();
+                   }
                }
                catch (Exception e)
                {
+                   Debug.Log(e);
                    warningText.text =
                        "ERROR:Could not connect to server, please check internet connection. Exit building and try again.";
                    return;

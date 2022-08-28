@@ -6,10 +6,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Building : MonoBehaviour
 {
-    //use (int) scene id or (string) scene name? 
-    //[SerializeField]
-    //private string buildingName;
-    //[SerializeField] 
     public bool firstVisit;
     public string buildingSceneName;
     public string tutorialSceneName;

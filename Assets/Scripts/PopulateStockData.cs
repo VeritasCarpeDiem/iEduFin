@@ -13,16 +13,16 @@ namespace DefaultNamespace
         private const string MAX_QUANTITY = "999";
         private const string DEFAULT_PRICE = "$0.00";
         const string BUY_MESSAGE = "BUY";
-        //FINISH ADDING REFERENCES TO /POPULATINGH EXISTING ONES AND THEN ONCE DONE W/ ACCOUNT ADD PURCHASE FEATURE
+        
         [SerializeField]  TMP_Dropdown dropdown;
         [SerializeField] private TextMeshProUGUI quantityPrice;
-            
         [SerializeField] private TMP_InputField quantityInputField;
         [SerializeField]  TextMeshProUGUI stockTextLeft;
         [SerializeField]  TextMeshProUGUI stockName;
         [SerializeField]  TextMeshProUGUI changeText;
         [SerializeField]  TextMeshProUGUI priceText;
         [SerializeField]  TextMeshProUGUI purchaseMessage;
+        
         private CurrentStockData currStock;
         private AccountManager accManager;
         private StockQuote stock;
@@ -76,12 +76,9 @@ namespace DefaultNamespace
         }
 
         public async void OnSubmit()
-        //TODO: MAYBE ADD CASE for 0 instead of letting them buy/sell 0 shares
-        {   //check player acc balance, and if balance >= quantity * price
-            //if yes message should say purchased x shares of y at z $. and subtract z from account balance
-            //maybe message under saying new account balance: check account overview for more details
-            //else should say insufficient funds: account balance 
-            
+        
+        {   
+            //check player acc balance, and if balance >= quantity * price
             decimal currBalance = accManager.playerAccount.balance;
             int numShares = quantityInputField.text == ""? 0: int.Parse(quantityInputField.text);
             decimal sellPrice = Math.Round(this.stock.Price, 2);
@@ -97,9 +94,9 @@ namespace DefaultNamespace
             
             if (dropdown.captionText.text == BUY_MESSAGE)
             {
-                //TODO: ADd condition for if balance is eneough between thsese lines of code 
-                //TODO: if it is enough, proceed: subtract cost from acc balance, create transaction object, push to history and update stocks owned dict with stock:shares
+                
                 Debug.Log("CURRBALANCE::::" + currBalance);
+                
                 //successful buy
                 if (currBalance >= numShares * sellPrice)
                 {
@@ -114,23 +111,21 @@ namespace DefaultNamespace
                         accManager.playerAccount.ownedStocks[itemName] = numShares;
                     }
                 }
+                
                 //failed buy
                 else
                 {
                     //Debug.Log(currBalance);
                     Debug.Log(accManager.playerAccount.username);
+                    
                     purchaseMessage.text =
                         $"Insufficient funds \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                    
                     return;
                 }
-                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
-                //TODO: Add aforementioned code between here 
                 
-                // purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n \n New Account Balance: $";
-                // accManager.playerAccount.balance -= sellPrice * numShares;
-                // await accManager.saveData();
-                // Debug.Log("Total: " + quantityPrice.text);
-
+                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                
             }
             //CASE WHERE USER WANTS TO SELL 
             else
@@ -159,19 +154,21 @@ namespace DefaultNamespace
                         $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {stockName.text} \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                     return;
                 }
-                //TODO: add condition to check if user owns atleast N shares of stock, if so allow sell and add total to acc balance, create transaction, push to history and update owned
+                
                 purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n New Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                 
                 Debug.Log("Total: " + quantityPrice.text);
                 
                     
             }
+            
             accManager.OnDeserialize();
-            //Debug.Log(playerAccount.transactionHistory.Count);
+         
             Transaction t = new Transaction(transactionType, action, itemName, numShares, sellPrice, currDate);
-            //purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: $";
             accManager.playerAccount.transactionHistory.Add(t);
+            
             await accManager.saveData();
+            
             Debug.Log("Total: " + quantityPrice.text);
             Debug.Log(dropdown.captionText.text);
         }

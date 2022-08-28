@@ -13,8 +13,7 @@ using UnityEngine.UI;
 
 public class AccountCreation : MonoBehaviour
     {
-        //CREATE A POP UP WINDOW HERE 
-        [SerializeField] private string authenticationEndpoint = "http://localhost:13756";
+        //Create references to all necessary UI elements 
         // should be changed to "http://132.249.242.242/account/create"
         [SerializeField] private TMP_InputField emailInput;
         [SerializeField] private TMP_InputField usernameInput;
@@ -23,6 +22,8 @@ public class AccountCreation : MonoBehaviour
         [SerializeField] private TextMeshProUGUI alertText;
         [SerializeField] private Button createButton;
         [SerializeField] private TextMeshProUGUI warningText;
+        //API endpoints
+        [SerializeField] private string authenticationEndpoint = "http://localhost:13756";
         const string CREATION_ENDPOINT = "/account/create";
         private const string PLAYERDATA_ENDPOINT = "/account/data"; 
         private HttpClient client = new HttpClient();
@@ -42,12 +43,14 @@ public class AccountCreation : MonoBehaviour
             string email = emailInput.text.ToLower();
             alertText.text = "Creating Account";
             this.createButton.interactable = false;
+            
             if (username.Contains(" "))
             {
                 alertText.text = "Invalid username, no spaces allowed";
                 this.createButton.interactable = true; 
                 return;
             }
+            
             if (!isValidEmail(email))
             {
                 alertText.text = "Please enter a valid email";
@@ -74,16 +77,18 @@ public class AccountCreation : MonoBehaviour
                     { "rusername", username },
                     { "rpassword", password }
                 };
+                
                 var data = new FormUrlEncodedContent(accountCredentials);
                 var response = await client.PostAsync(new Uri(this.authenticationEndpoint + CREATION_ENDPOINT), data);
             
                 var respBody = await response.Content.ReadAsStringAsync();
+                
+                //invalid authentication case
                 if ((int)response.StatusCode == 409)
                 {
                     this.createButton.interactable = true;
                     alertText.text = respBody;
                 }
-                
                 //once account is created
                 else
                 {
