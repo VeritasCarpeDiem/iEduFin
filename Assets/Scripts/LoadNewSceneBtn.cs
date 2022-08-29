@@ -2,21 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Scene = UnityEditor.SearchService.Scene;
 
 public class LoadNewSceneBtn : MonoBehaviour
 {
-    public void LoadMainMap()
+    public void LoadNewScene(string sceneName)
     {
-        SceneManager.LoadScene("TestMap");
+        SceneManager.LoadScene(sceneName);
     }
-    
-    public void LoadSettings()
-    {
-        SceneManager.LoadScene("Settings_Scene");
-    }
-    
-    public void LoadHomepage()
-    {
-        SceneManager.LoadScene("MainMenu_Scene");
-    }
+
 }
