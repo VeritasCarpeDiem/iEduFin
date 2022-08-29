@@ -68,6 +68,11 @@ namespace DefaultNamespace
                 x.nameText.text = stock.Symbol;
                 x.priceText.text = $"${price.ToString()}";
                 x.changePercentText.text = stock.ChangePercent;
+                //changes color of percent text depending whether it's a gain or loss
+                if (x.changePercentText.text.Contains("-"))
+                {
+                    x.changePercentText.color = new Color32(176, 34, 34, 255);
+                }
                 x.numShares.text =  $"{entry.Value.ToString()} shares";
                 
                 float portPercent = (float) ((entry.Value * price)/accountValue);
@@ -118,6 +123,11 @@ namespace DefaultNamespace
                 panel.nameText.text = t.itemName;
                 panel.dateText.text = t.transactionDate.ToShortDateString();
                 panel.actionText.text = t.action;
+                //changes color of action text depending whether it's buy or sell
+                if (panel.actionText.text.Equals("SELL"))
+                {
+                    panel.actionText.color = new Color32(176, 34, 34, 255);
+                }
             }
             // foreach (Transaction t in this.accHistory)
             // {

@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_text: UCSD Racoon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
+  m_sharedMaterial: {fileID: 2024262485638516, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2072,7 +2072,7 @@ MonoBehaviour:
 
     $50,000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e24c9e73b4d6174197741a2baba965b, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2136,7 +2136,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1229364688
@@ -2355,7 +2355,7 @@ MonoBehaviour:
 
     $10,000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c382ab4588b83234ba473060253285d6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e24c9e73b4d6174197741a2baba965b, type: 2}
   m_sharedMaterial: {fileID: -8140586174421695858, guid: c382ab4588b83234ba473060253285d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2419,7 +2419,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1295859838
@@ -2817,6 +2817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2956,7 +2957,7 @@ MonoBehaviour:
     catch."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
-  m_sharedMaterial: {fileID: -6012687193988017063, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
+  m_sharedMaterial: {fileID: 2024262485638516, guid: 31c9db04ae0ca3943a924e7d9819ed7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3441,8 +3442,8 @@ MonoBehaviour:
 
     $1000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e24c9e73b4d6174197741a2baba965b, type: 2}
+  m_sharedMaterial: {fileID: -4327825853611867518, guid: 1e24c9e73b4d6174197741a2baba965b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
