@@ -18,23 +18,9 @@ namespace DefaultNamespace
         private void Start()
         {
             DontDestroyOnLoad(this);
-            // if (this.playerAccount.username == "")
-            // {
-            //     Destroy(this);
-            // }
-            // else
-            // {
-            //     DontDestroyOnLoad(this);
-            // }
-
         }
-    //1x change in desierailzize
         public async Task saveData()
         {
-            //playerAccount.ownedStocks.Add("AAPL",1);
-            // Debug.Log("AAAAAAPl");
-            // // int a = playerAccount.ownedStocks["AAPL"];
-            // Debug.Log("a " + a);
             string serializedAcc = JsonConvert.SerializeObject(playerAccount);
             Debug.Log(serializedAcc);
             //post default account to appropriate route
@@ -43,10 +29,13 @@ namespace DefaultNamespace
                 {"username", playerAccount.username},
                 {"serializedData",serializedAcc},
             };
+            
             Debug.Log(playerAccount.username);
             var accData = new FormUrlEncodedContent(postPlayerData);
+            
             Debug.Log(this.authenticationEndpoint + PLAYERDATA_ENDPOINT);
             var accResponse = await client.PostAsync(new Uri(this.authenticationEndpoint + PLAYERDATA_ENDPOINT), accData);
+            
             var accRespBody = await accResponse.Content.ReadAsStringAsync();
             //PlayerAccountData newObj = JsonConvert.DeserializeObject<PlayerAccountData>(accRespBody); 
             //Debug.Log(accRespBody);
