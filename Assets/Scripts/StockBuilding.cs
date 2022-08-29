@@ -26,9 +26,7 @@ public class StockBuilding : MonoBehaviour
             //this.client.BaseAddress = new Uri("http://localhost:13756/stocks/");
             this.client.BaseAddress = new Uri("http://132.249.242.242/stocks/");
         }
-
-        //Need to refactor getter method
-        //TODO: Handle case where API fails 
+        
         public async Task RequestStockQuote(string symbol)
         {
             //string stockRequestURL = $"query?function={StockQuoteFunction}&symbol={symbol}&apikey={ApiKey}";
@@ -45,12 +43,8 @@ public class StockBuilding : MonoBehaviour
             {
                 this.currentStockQuote = responseBody;
             }
-
-            // if(this.)
-            Debug.Log("Top");
-            Debug.Log(responseBody);
-            Debug.Log("bot");
             
+            Debug.Log("Response Body" + responseBody);
         }
         
         //Getter Mehtod 
@@ -66,8 +60,7 @@ public class StockBuilding : MonoBehaviour
             }
             catch (Exception e)
             {
-                    //TODO: ADD A COMMENT ABOUT INVALID STOCK HERE 
-                    return null;
+                return null;
             }
         }
 

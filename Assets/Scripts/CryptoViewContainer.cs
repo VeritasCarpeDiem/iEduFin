@@ -22,11 +22,11 @@ namespace DefaultNamespace
         public void click()
         {
             currentCryptoObject.crypto = this.crypto;
+            
             SceneManager.LoadScene("CryptoDataScene");
+            
             Debug.Log("DISPLAYING STOCK");
-            // Debug.Log(cryptoText.text);
-            // Debug.Log(volumeText.text);
-            // Debug.Log(priceText.text);
+
             Debug.Log(crypto.Name);
         }
         

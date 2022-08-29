@@ -82,7 +82,16 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
                 GameObject ccDestroy = GameObject.FindWithTag("CurrCrypto");
                 Destroy(ccDestroy);
                // SceneManager.LoadScene("TestMap2");
-               SceneManager.LoadScene("CharacterSelection");
+
+               if (returnedAccount.className == "")
+               {
+                   SceneManager.LoadScene("CharacterSelection");
+               }
+               else
+               {
+                   // SceneManager.LoadScene("TestMap2");
+                   SceneManager.LoadScene("MapTest3");
+               }
             }
             //Debug.Log(respBody);
         }

@@ -1069,6 +1069,7 @@ GameObject:
   - component: {fileID: 674269200}
   - component: {fileID: 674269199}
   - component: {fileID: 674269202}
+  - component: {fileID: 674269203}
   m_Layer: 5
   m_Name: Crypto_Btn
   m_TagString: Untagged
@@ -1193,6 +1194,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Crypto Building
   content: 
+--- !u!114 &674269203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674269197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1f67e9a50c7a2468da873bdd5de0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstVisit: 0
+  buildingSceneName: CryptoBuildingScene
+  tutorialSceneName: CryptoBuildingScene
 --- !u!1 &689878704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1610,7 @@ GameObject:
   - component: {fileID: 1239742112}
   - component: {fileID: 1239742111}
   - component: {fileID: 1239742114}
+  - component: {fileID: 1239742115}
   m_Layer: 5
   m_Name: InfoBooth_Btn
   m_TagString: Untagged
@@ -1665,7 +1682,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1643182226}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1239742115}
+        m_TargetAssemblyTypeName: Building, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1239742112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1718,6 +1747,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Information Booth
   content: 
+--- !u!114 &1239742115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239742109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1f67e9a50c7a2468da873bdd5de0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstVisit: 0
+  buildingSceneName: (New)InfoBooth_Scene
+  tutorialSceneName: (New)InfoBooth_Scene
 --- !u!1 &1266882551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,6 +2111,7 @@ GameObject:
   - component: {fileID: 1486889951}
   - component: {fileID: 1486889950}
   - component: {fileID: 1486889953}
+  - component: {fileID: 1486889954}
   m_Layer: 5
   m_Name: Stocks_Btn
   m_TagString: Untagged
@@ -2191,6 +2236,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Stock Building
   content: 
+--- !u!114 &1486889954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486889948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1f67e9a50c7a2468da873bdd5de0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstVisit: 0
+  buildingSceneName: StoclBuildingScene
+  tutorialSceneName: StoclBuildingScene
 --- !u!1 &1643182224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,7 +2571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit

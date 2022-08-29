@@ -29,13 +29,17 @@ public class StockSearchBtn : MonoBehaviour
         {
             Debug.Log("Stock field is empty");
         }
+        
         Debug.Log("clicked");
+        
         string symbol = this.stockInput.text;
+        
         Debug.Log(symbol);
      
         await stockBuilding.RequestStockQuote(symbol);
 
         // var stock =  Task.Run(() => stockBuilding.GetStockQuote(symbol));
+        
         var stock = stockBuilding.GetStockQuote();
         Debug.Log("outside");
         if (stock != null)

@@ -22,23 +22,19 @@ namespace DefaultNamespace
             }
 
             Debug.Log("clicked");
+            
             string symbol = this.cryptoInput.text;
             Debug.Log(symbol);
             
             await cryptoBuilding.RequestCryptoQuote(symbol);
 
             var crypto = cryptoBuilding.GetCryptoQuote();
-            Debug.Log("outside");
             Debug.Log(crypto.Name);
+            
             if (crypto != null)
             {
                 currentCryptoObject.crypto = crypto;
-                Debug.Log("S");
-                Debug.Log(currentCryptoObject.crypto.Name);
-                Debug.Log(currentCryptoObject.crypto.Price);
-                Debug.Log(currentCryptoObject.crypto.MarketCap);
             }
-            Debug.Log("DONEDONE");
         }
     }
 }

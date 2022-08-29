@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,12 @@ public class CharacterSelectionManager : MonoBehaviour
 {
     [SerializeField] public GameObject[] characterContents;
     [SerializeField] public GameObject[] buttons;
-    
+    [SerializeField] public PlayerAccountData playerAccount;
+
+    void Start()
+    {
+        playerAccount =  GameObject.FindWithTag("AccountManager").GetComponent<AccountManager>().playerAccount;
+    }
     public void ChangeCharacter(GameObject content)
     {
         content.SetActive(true);
@@ -20,6 +26,9 @@ public class CharacterSelectionManager : MonoBehaviour
                 characterContents[i].SetActive(false);
             }
         }
+        
+        playerAccount.className = content.name;
+        Debug.Log(playerAccount.className);
     } 
     
     public void ChangeButtonColor(GameObject button)

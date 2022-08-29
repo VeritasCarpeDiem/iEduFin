@@ -29,22 +29,8 @@ namespace DefaultNamespace
         private decimal accountValue;
         private Dictionary<string, int> ownedStocks;
         private decimal accountBuyingPower;
-
         private List<Transaction> accHistory;
-        //TEMP FOR TESTING
-        // private Dictionary<string, decimal> cryptoOwned = new Dictionary<string, decimal>()
-        // {
-        //     { "BTC", 4 },
-        //     {"SOL",2},
-        //     {"ETH",3}
-        // };
-        // private Dictionary<string, int> stocksOwned = new Dictionary<string, int>()
-        // {
-        //     { "AMD", 4 },
-        //     {"AMZN",2},
-        //     {"AAPL",3}
-        // };
-
+        
         private async void Start()
         {
               accManager = GameObject.FindWithTag("AccountManager").GetComponent<AccountManager>();
@@ -88,6 +74,7 @@ namespace DefaultNamespace
                 x.portfolioPercentText.text = $"{Math.Round(portPercent,2)}% of your portfolio";
                 
                 cardObj.GetComponent<AOCardData>().p.fillAmount = portPercent; 
+                
                 Debug.Log( cardObj.GetComponent<AOCardData>().priceText.text);
                 Debug.Log("j");
             }
@@ -122,14 +109,24 @@ namespace DefaultNamespace
 
         public async Task PopulateTradeHistory()
         {
-            foreach (Transaction t in this.accHistory)
+            int start = accHistory.Count - 1;
+            for (int i = start; i >= 0; i--)
             {
+                Transaction t = accHistory[i];
                 GameObject cellObj = Instantiate(tradeCellPrefab, tradeHistoryBody);
                 var panel  = cellObj.GetComponent<TradeHistoryPanel>();
                 panel.nameText.text = t.itemName;
                 panel.dateText.text = t.transactionDate.ToShortDateString();
                 panel.actionText.text = t.action;
             }
+            // foreach (Transaction t in this.accHistory)
+            // {
+            //     GameObject cellObj = Instantiate(tradeCellPrefab, tradeHistoryBody);
+            //     var panel  = cellObj.GetComponent<TradeHistoryPanel>();
+            //     panel.nameText.text = t.itemName;
+            //     panel.dateText.text = t.transactionDate.ToShortDateString();
+            //     panel.actionText.text = t.action;
+            // }
         }
         //possibly remove/refactor depending on performance (needed for percent of shares accountvalue)
         //TODO: REFACTOR
@@ -161,20 +158,4 @@ namespace DefaultNamespace
     
 }
 }
-//
-// foreach (KeyValuePair<string,int> entry in ownedStocks)
-// {
-//     await stockBuilding.RequestStockQuote(entry.Key);
-//     var stock = stockBuilding.GetStockQuote();
-//
-//     GameObject cardObj = Instantiate(cardTemplatePrefab, stockBody);
-//     // cardObj.GetComponent<>().price = 1000;
-//     var x = cardObj.GetComponent<AOCardData>();
-//     x.nameText.text = stock.Symbol;
-//     x.priceText.text = Math.Round(stock.Price,2).ToString();
-//     x.changePercentText.text = stock.ChangePercent;
-//                 
-//     cardObj.GetComponent<AOCardData>().p.fillAmount = 0.75f; 
-//     Debug.Log( cardObj.GetComponent<AOCardData>().priceText.text);
-//     Debug.Log("j");
-// }
+

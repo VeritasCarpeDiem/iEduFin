@@ -14,8 +14,6 @@ namespace DefaultNamespace
             {
                 Destroy(this.gameObject);
             }
-            // if more then one music player is in the scene
-            //destroy ourselves
             else
             {
                 DontDestroyOnLoad(gameObject);
