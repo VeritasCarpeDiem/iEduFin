@@ -22,8 +22,8 @@ namespace DefaultNamespace
             ownedCrypto = new Dictionary<string, decimal>();
             
             transactionHistory = new List<Transaction>();
-            
-            balance = 10000;
+            //default balance and class name 
+            balance = 0;
             
             className = "";
         }
