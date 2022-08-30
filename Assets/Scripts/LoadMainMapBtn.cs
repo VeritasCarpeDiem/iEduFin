@@ -7,6 +7,6 @@ public class LoadMainMapBtn : MonoBehaviour
 {
     public void LoadMainMap()
     {
-        SceneManager.LoadScene("MapTest3");
+        SceneManager.LoadScene("MainMap_Scene");
     }
 }
