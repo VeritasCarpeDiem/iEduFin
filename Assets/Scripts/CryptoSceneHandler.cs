@@ -20,7 +20,7 @@ namespace DefaultNamespace
         {
             string path = Application.dataPath + "/StockAndCryptoData/CryptoData.txt";
             var data = System.IO.File.ReadAllText(path);
-            CryptoToDisplay = data.Split("-USD,");
+            CryptoToDisplay = data.Split(",");
             
             cryptoBuilding = GameObject.FindWithTag("CryptoBuilding").GetComponent<CryptoBuilding>();
            

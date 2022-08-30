@@ -16,8 +16,8 @@ namespace DefaultNamespace
         {
             this.client = new HttpClient();
 
-            this.client.BaseAddress = new Uri(("http://localhost:13756/crypto/"));
-            //TODO: CHANGE TO SERVER IP HERE AND FOR STOCKS
+            this.client.BaseAddress = new Uri(("http://132.249.242.242/crypto/"));
+           
 
         }
 

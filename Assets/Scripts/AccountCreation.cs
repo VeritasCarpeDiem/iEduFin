@@ -23,7 +23,7 @@ public class AccountCreation : MonoBehaviour
         [SerializeField] private Button createButton;
         [SerializeField] private TextMeshProUGUI warningText;
         //API endpoints
-        [SerializeField] private string authenticationEndpoint = "http://localhost:13756";
+         private string authenticationEndpoint = "http://132.249.242.242";
         const string CREATION_ENDPOINT = "/account/create";
         private const string PLAYERDATA_ENDPOINT = "/account/data"; 
         private HttpClient client = new HttpClient();
@@ -43,7 +43,12 @@ public class AccountCreation : MonoBehaviour
             string email = emailInput.text.ToLower();
             alertText.text = "Creating Account";
             this.createButton.interactable = false;
-            
+            if (username == "" || password == "")
+            {
+                alertText.text = "username and password can't be empty";
+                this.createButton.interactable = true; 
+                return;
+            }
             if (username.Contains(" "))
             {
                 alertText.text = "Invalid username, no spaces allowed";
@@ -82,7 +87,7 @@ public class AccountCreation : MonoBehaviour
                 var response = await client.PostAsync(new Uri(this.authenticationEndpoint + CREATION_ENDPOINT), data);
             
                 var respBody = await response.Content.ReadAsStringAsync();
-                
+                Debug.Log(respBody);
                 //invalid authentication case
                 if ((int)response.StatusCode == 409)
                 {
