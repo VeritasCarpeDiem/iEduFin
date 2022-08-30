@@ -1,5 +1,6 @@
 ﻿using UnityEditor.TextCore.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
@@ -34,6 +35,7 @@ namespace DefaultNamespace
             if (crypto != null)
             {
                 currentCryptoObject.crypto = crypto;
+                SceneManager.LoadScene("CryptoDataScene");
             }
         }
     }
