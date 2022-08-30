@@ -42,7 +42,7 @@ namespace DefaultNamespace
             }
 
             await accManager.saveData();
-            SceneManager.LoadScene("MapTest3");
+            SceneManager.LoadScene("MainMap_Scene");
         }
     }
 }

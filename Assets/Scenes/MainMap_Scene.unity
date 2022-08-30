@@ -1842,8 +1842,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstVisit: 0
-  buildingSceneName: (New)InfoBooth_Scene
-  tutorialSceneName: (New)InfoBooth_Scene
+  buildingSceneName: InfoBooth_Scene
+  tutorialSceneName: InfoBooth_Scene
 --- !u!1 &1266882551
 GameObject:
   m_ObjectHideFlags: 0

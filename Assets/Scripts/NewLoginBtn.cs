@@ -90,7 +90,7 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
                else
                {
                    // SceneManager.LoadScene("TestMap2");
-                   SceneManager.LoadScene("MapTest3");
+                   SceneManager.LoadScene("MainMap_Scene");
                }
             }
             //Debug.Log(respBody);
