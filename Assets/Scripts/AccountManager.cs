@@ -29,7 +29,7 @@ namespace DefaultNamespace
                 {"username", playerAccount.username},
                 {"serializedData",serializedAcc},
             };
-            
+            Debug.Log("SERIALIZED STRING: " + serializedAcc);
             Debug.Log(playerAccount.username);
             var accData = new FormUrlEncodedContent(postPlayerData);
             
@@ -57,6 +57,11 @@ namespace DefaultNamespace
             if (playerAccount.transactionHistory == null)
             {
                 playerAccount.transactionHistory = new List<Transaction>();
+            }
+            
+            if (playerAccount.accountValueHistory == null)
+            {
+                playerAccount.accountValueHistory = new Dictionary<string, decimal>();
             }
         }
     }

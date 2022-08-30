@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
+using UnityEditor.Scripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Windows;
@@ -51,7 +52,7 @@ namespace DefaultNamespace
               
               await PopulateCrypto();
 
-              await PopulateTradeHistory();
+              PopulateTradeHistory();
         }
 
         public async Task PopulateStocks()
@@ -71,12 +72,11 @@ namespace DefaultNamespace
                 x.numShares.text =  $"{entry.Value.ToString()} shares";
                 
                 float portPercent = (float) ((entry.Value * price)/accountValue);
-                x.portfolioPercentText.text = $"{Math.Round(portPercent,2)}% of your portfolio";
+                x.portfolioPercentText.text = $"{Math.Round(portPercent,2) * 100}% of your portfolio";
                 
                 cardObj.GetComponent<AOCardData>().p.fillAmount = portPercent; 
                 
                 Debug.Log( cardObj.GetComponent<AOCardData>().priceText.text);
-                Debug.Log("j");
             }
         }
 
@@ -98,18 +98,18 @@ namespace DefaultNamespace
                 x.numShares.text = $"{entry.Value.ToString()} shares";
                 
                 float portPercent = (float) ((entry.Value * price)/accountValue);
-                x.portfolioPercentText.text = $"{Math.Round(portPercent,2)}% of your portfolio";
+                x.portfolioPercentText.text = $"{Math.Round(portPercent,2) * 100}% of your portfolio";
                 cardObj.GetComponent<AOCardData>().p.fillAmount = portPercent; 
                
                 Debug.Log( cardObj.GetComponent<AOCardData>().priceText.text);
-                Debug.Log("j");
             }
         }
         
 
-        public async Task PopulateTradeHistory()
+        public  void  PopulateTradeHistory()
         {
             int start = accHistory.Count - 1;
+            int count = 0;
             for (int i = start; i >= 0; i--)
             {
                 Transaction t = accHistory[i];
@@ -118,17 +118,10 @@ namespace DefaultNamespace
                 panel.nameText.text = t.itemName;
                 panel.dateText.text = t.transactionDate.ToShortDateString();
                 panel.actionText.text = t.action;
+
             }
-            // foreach (Transaction t in this.accHistory)
-            // {
-            //     GameObject cellObj = Instantiate(tradeCellPrefab, tradeHistoryBody);
-            //     var panel  = cellObj.GetComponent<TradeHistoryPanel>();
-            //     panel.nameText.text = t.itemName;
-            //     panel.dateText.text = t.transactionDate.ToShortDateString();
-            //     panel.actionText.text = t.action;
-            // }
         }
-        //possibly remove/refactor depending on performance (needed for percent of shares accountvalue)
+        
         //TODO: REFACTOR
        public async Task<Decimal> CalculateAccountValue()
        {
@@ -152,8 +145,7 @@ namespace DefaultNamespace
            return accValue;
        }
        
-
-        //get isntance of a card and copy/ edit each card for owned stock and do same for crypto 
+       
     
     
 }

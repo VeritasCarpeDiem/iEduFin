@@ -9,10 +9,12 @@ namespace DefaultNamespace
         public string username;
         public Dictionary<string, int> ownedStocks;
         public Dictionary<string, decimal> ownedCrypto;
+        //<string (date), decimal(currAccountValue)>
+        public Dictionary<string, decimal> accountValueHistory;
         public List<Transaction> transactionHistory;
         public decimal balance;
         public string className;
- 
+
         public PlayerAccountData(string username)
         {
             this.username = username;

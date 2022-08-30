@@ -2667,6 +2667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -20637,6 +20638,7 @@ GameObject:
   - component: {fileID: 2139308761}
   - component: {fileID: 2139308760}
   - component: {fileID: 2139308762}
+  - component: {fileID: 2139308763}
   m_Layer: 5
   m_Name: ETF
   m_TagString: Untagged
@@ -20716,3 +20718,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: ETF Building
   content: Currently under construction
+--- !u!114 &2139308763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139308758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231d28851f1d8489d90df027cd798a8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
