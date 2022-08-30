@@ -8,16 +8,28 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
+
     public class AccountManager : MonoBehaviour
-    {
-        public PlayerAccountData playerAccount;
-       [SerializeField] private string authenticationEndpoint = "http://localhost:13756";
+    { public PlayerAccountData playerAccount;
+       private string authenticationEndpoint = "http://132.249.242.242";
        const string CREATION_ENDPOINT = "/account/create";
        private const string PLAYERDATA_ENDPOINT = "/account/data";
        private HttpClient client = new HttpClient();
-        private void Start()
+        // private void Start()
+        // {
+        //     DontDestroyOnLoad(this);
+        // }
+        private void Awake()
         {
-            DontDestroyOnLoad(this);
+            int numAM = FindObjectsOfType<AccountManager>().Length;
+            if (numAM!= 1)
+            {
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                DontDestroyOnLoad(gameObject);
+            }
         }
         public async Task saveData()
         {

@@ -16,8 +16,8 @@ using UnityEngine.UI;
 
 
 public class NewLoginBtn : UnityEngine.MonoBehaviour
-{
-   [SerializeField] private string authenticationEndpoint = "http://localhost:13756";
+{ 
+    private string authenticationEndpoint = "http://132.249.242.242";
    const string LOGIN_ENDPOINT = "/account/login";
    private const string PLAYERDATA_ENDPOINT = "/account/data/"; 
   // [SerializeField] string authenticationEndpoint = "http://132.249.242.242";
@@ -47,7 +47,12 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
         string password = passwordInput.text;
         alertText.text = "Signing in...";
         this.loginButton.interactable = false;
-        
+        if (username == "" || password == "")
+        {
+            alertText.text = "Please enter a valid username and password";
+            this.loginButton.interactable = true;
+            return;
+        }
         Debug.Log("before try ");
         try
         {
@@ -62,7 +67,7 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
             var data = new FormUrlEncodedContent(loginCredentials);
             var response = await client.PostAsync(new Uri(this.authenticationEndpoint + LOGIN_ENDPOINT),data);
             var respBody = await response.Content.ReadAsStringAsync();
-
+            Debug.Log(respBody);
             if (response.StatusCode.ToString() == "Unauthorized") 
             {
                 this.loginButton.interactable = true;
@@ -75,13 +80,14 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
                 var accRespBody = await accResponse.Content.ReadAsStringAsync();
                 
                 //maybe instantiate a global account here with same fields + account info 
+                Debug.Log(accRespBody);
                 PlayerAccountData returnedAccount = JsonConvert.DeserializeObject<PlayerAccountData>(accRespBody);
                 accountManager.playerAccount = returnedAccount;
                 alertText.text = $"Welcome {returnedAccount.username}";
                 accountManager.OnDeserialize();
                 GameObject ccDestroy = GameObject.FindWithTag("CurrCrypto");
                 Destroy(ccDestroy);
-               // SceneManager.LoadScene("TestMap2");
+               
 
                if (returnedAccount.className == "")
                {
@@ -89,7 +95,6 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
                }
                else
                {
-                   // SceneManager.LoadScene("TestMap2");
                    SceneManager.LoadScene("MapTest3");
                }
             }
@@ -103,6 +108,7 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
         }catch (Exception e)
         {
             Debug.Log(e);
+            this.loginButton.interactable = true;
             return;
         }
     }
