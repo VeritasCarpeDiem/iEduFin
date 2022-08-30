@@ -41,12 +41,12 @@ namespace DefaultNamespace
               accHistory = playerData.transactionHistory;
               
               buyingPower = Math.Round(playerData.balance,2);
-              buyingPowerField.text = "$" + buyingPower.ToString();
+              buyingPowerField.text = String.Format("{0:n}","$" + buyingPower.ToString());
               
               accountValue = await CalculateAccountValue();
               Debug.Log("accountValue" + accountValue);
               
-              accountValueField.text = "$" + Math.Round(accountValue, 2).ToString();
+              accountValueField.text = String.Format("{0:n}","$" + Math.Round(accountValue, 2).ToString());
               
               await PopulateStocks();
               
@@ -67,7 +67,8 @@ namespace DefaultNamespace
                 var x = cardObj.GetComponent<AOCardData>();
                 
                 x.nameText.text = stock.Symbol;
-                x.priceText.text = $"${price.ToString()}";
+                //ts
+                x.priceText.text = $"${ String.Format("{0:n}",price)}";
                 x.changePercentText.text = stock.ChangePercent;
                 //changes color of percent text depending whether it's a gain or loss
                 if (x.changePercentText.text.Contains("-"))
@@ -98,7 +99,7 @@ namespace DefaultNamespace
                 var x = cardObj.GetComponent<AOCardData>();
                 
                 x.nameText.text = crypto.Name;
-                x.priceText.text = $"${price.ToString()}";
+                x.priceText.text = $"${ String.Format("{0:n}",price)}";
                 x.changePercentText.text = "";
                 x.numShares.text = $"{entry.Value.ToString()} shares";
                 

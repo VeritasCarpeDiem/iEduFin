@@ -70,7 +70,7 @@ namespace DefaultNamespace
             else
             {
                 decimal currStockPrice = Convert.ToDecimal(priceText.text.Trim('$'));
-                quantityPrice.text = "$" + Math.Round((int.Parse(quantityInputField.text) * currStockPrice), 2);
+                quantityPrice.text = "$" +  String.Format("{0:n}",Math.Round((int.Parse(quantityInputField.text) * currStockPrice), 2));
             }
   
         }
@@ -119,12 +119,12 @@ namespace DefaultNamespace
                     Debug.Log(accManager.playerAccount.username);
                     
                     purchaseMessage.text =
-                        $"Insufficient funds \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                        $"Insufficient funds \n Current Account Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
                     
                     return;
                 }
                 
-                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.stockName.text} at ${sellPrice} per share \n New Account Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
                 
             }
             //CASE WHERE USER WANTS TO SELL 
@@ -151,11 +151,11 @@ namespace DefaultNamespace
                 else
                 {
                     purchaseMessage.text =
-                        $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {stockName.text} \n Current Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                        $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {stockName.text} \n Current Account Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
                     return;
                 }
                 
-                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n New Account Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.stockName.text} at ${Math.Round(this.stock.Price,2)} per share \n New Account Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
                 
                 Debug.Log("Total: " + quantityPrice.text);
                 

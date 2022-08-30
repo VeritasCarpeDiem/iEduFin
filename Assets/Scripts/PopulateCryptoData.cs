@@ -41,7 +41,7 @@ namespace DefaultNamespace
         void populateUI()
         {
             this.cryptoName.text = crypto.Name;
-            this.priceText.text = "$" + Math.Round(crypto.Price, 2);
+            this.priceText.text = String.Format("{0:n}","$" + Math.Round(crypto.Price, 2));
             this.volumeText.text = "$" + Math.Round(crypto.Volume, 2);
             
             quantityInputField.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
@@ -79,7 +79,7 @@ namespace DefaultNamespace
             else
             {
                 decimal currCryptoPrice = Convert.ToDecimal(priceText.text.Trim('$'));
-                quantityPrice.text = "$" + Math.Round((decimal.Parse(quantityInputField.text) * currCryptoPrice), 2);
+                quantityPrice.text = "$" +  String.Format("{0:n}",Math.Round((decimal.Parse(quantityInputField.text) * currCryptoPrice), 2));
             }
 
         }
@@ -121,7 +121,7 @@ namespace DefaultNamespace
                         $"Insufficient funds \n Current Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
                     return;
                 }
-                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.cryptoName.text} at ${sellPrice} per share \n New Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                purchaseMessage.text = $"Successfully PURCHASED {numShares} shares of {this.cryptoName.text} at ${sellPrice} per share \n New Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
             }
             //case where user wants to sell
             else
@@ -142,12 +142,12 @@ namespace DefaultNamespace
                         accManager.playerAccount.ownedCrypto[cryptoName.text] -= numShares;
                     }
                     accManager.playerAccount.balance += balanceToAdd;
-                    purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.cryptoName.text} at ${sellPrice} per share \n New Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                    purchaseMessage.text = $"Successfully SOLD {numShares} shares of {this.cryptoName.text} at ${sellPrice} per share \n New Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
                 }
                 else
                 {
                     purchaseMessage.text =
-                        $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {cryptoName.text} \n Current Balance: ${Math.Round(accManager.playerAccount.balance,2)}";
+                        $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {cryptoName.text} \n Current Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
                     return;
                 }
 
