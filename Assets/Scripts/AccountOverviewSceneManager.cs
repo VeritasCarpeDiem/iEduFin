@@ -71,7 +71,7 @@ namespace DefaultNamespace
                 //changes color of percent text depending whether it's a gain or loss
                 if (x.changePercentText.text.Contains("-"))
                 {
-                    x.changePercentText.color = new Color32(176, 34, 34, 255);
+                    x.changePercentText.GetComponent<TextMeshProUGUI>().color = new Color32(241,52,0,255);
                 }
                 x.numShares.text =  $"{entry.Value.ToString()} shares";
                 
@@ -126,7 +126,7 @@ namespace DefaultNamespace
                 //changes color of action text depending whether it's buy or sell
                 if (panel.actionText.text.Equals("SELL"))
                 {
-                    panel.actionText.color = new Color32(176, 34, 34, 255);
+                    panel.actionText.GetComponent<TextMeshProUGUI>().color = new Color32(241,52,0,255);
                 }
             }
             // foreach (Transaction t in this.accHistory)

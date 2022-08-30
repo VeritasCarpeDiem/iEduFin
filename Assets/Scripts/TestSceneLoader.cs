@@ -8,6 +8,6 @@ public class TestSceneLoader : MonoBehaviour
     public void LoadMainMap()
     {
         SceneManager.LoadScene("TestMap");
-        SFXManager.sfxInstance.audio.PlayOneShot(SFXManager.sfxInstance.click);
+        //SFXManager.sfxInstance.audio.PlayOneShot(SFXManager.sfxInstance.click);
     }
 }

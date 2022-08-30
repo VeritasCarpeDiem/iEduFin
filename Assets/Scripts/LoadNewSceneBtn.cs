@@ -8,7 +8,9 @@ public class LoadNewSceneBtn : MonoBehaviour
 {
     public void LoadNewScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        Debug.Log(sceneName + " is loading");
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        Debug.Log(sceneName + " has loaded");
     }
 
 }
