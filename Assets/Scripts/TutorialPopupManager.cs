@@ -16,7 +16,6 @@ public class TutorialPopupManager : MonoBehaviour
         if (accManager.playerAccount.firstLogin)
         {
             tutPopup.SetActive(true);
-            ShowTut();
             accManager.playerAccount.firstLogin = false;
             accManager.saveData();
         }

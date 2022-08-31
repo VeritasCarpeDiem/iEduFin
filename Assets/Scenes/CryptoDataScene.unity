@@ -1087,7 +1087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 49, y: 88}
+  m_AnchoredPosition: {x: 125, y: 88}
   m_SizeDelta: {x: 287.1959, y: 54.044}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &241873091
@@ -2229,7 +2229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -339, y: 88}
+  m_AnchoredPosition: {x: -293, y: 88}
   m_SizeDelta: {x: 287.1959, y: 54.044}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &744150709
@@ -2585,7 +2585,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -22.748291, y: 0, z: -16.24878, w: 0}
+  m_margin: {x: 35.16095, y: 0, z: -112.004395, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4155,7 +4155,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -19.498596, y: 0, z: -22.748474, w: 0}
+  m_margin: {x: -19.498596, y: 0, z: -109.669556, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4446,7 +4446,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 63.897705, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4500,6 +4500,9 @@ MonoBehaviour:
   changeText: {fileID: 0}
   priceText: {fileID: 0}
   purchaseMessage: {fileID: 405957363}
+  priceChangeText: {fileID: 0}
+  closingPrice: {fileID: 0}
+  volumeText: {fileID: 0}
 --- !u!81 &1855642625
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4936,7 +4939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 442, y: 88}
+  m_AnchoredPosition: {x: 476, y: 88}
   m_SizeDelta: {x: 287.1959, y: 54.044}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2097890516
