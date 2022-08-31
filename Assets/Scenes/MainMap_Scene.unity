@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 179824552}
   - component: {fileID: 179824551}
   - component: {fileID: 179824554}
+  - component: {fileID: 179824555}
   m_Layer: 5
   m_Name: Logout_Btn
   m_TagString: Untagged
@@ -568,6 +569,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424ad1eaefd64a96ba4de1c671eb70f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &179824555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179824549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &299887970
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +763,7 @@ GameObject:
   - component: {fileID: 510469671}
   - component: {fileID: 510469670}
   - component: {fileID: 510469673}
+  - component: {fileID: 510469674}
   m_Layer: 5
   m_Name: KhoslaIcon
   m_TagString: Untagged
@@ -868,6 +899,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Character Icon
   content: Click to view the menu
+--- !u!114 &510469674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510469668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &552079040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1155,7 @@ GameObject:
   - component: {fileID: 674269199}
   - component: {fileID: 674269202}
   - component: {fileID: 674269203}
+  - component: {fileID: 674269204}
   m_Layer: 5
   m_Name: Crypto_Btn
   m_TagString: Untagged
@@ -1246,6 +1307,35 @@ MonoBehaviour:
   firstVisit: 0
   buildingSceneName: CryptoBuildingScene
   tutorialSceneName: CryptoBuildingScene
+--- !u!114 &674269204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674269197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &689878704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,6 +1432,8 @@ GameObject:
   - component: {fileID: 774654406}
   - component: {fileID: 774654405}
   - component: {fileID: 774654404}
+  - component: {fileID: 774654407}
+  - component: {fileID: 774654408}
   m_Layer: 5
   m_Name: Setting_Btn
   m_TagString: Untagged
@@ -1413,7 +1505,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 774654405}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 774654407}
+        m_TargetAssemblyTypeName: ClickSettingsBtn, Assembly-CSharp
+        m_MethodName: loadSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &774654405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,6 +1556,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774654402}
   m_CullTransparentMesh: 1
+--- !u!114 &774654407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774654402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1346e648d85bb9c4a866603c4a1d5cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toMap: 1
+--- !u!114 &774654408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774654402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &877847371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,6 +1915,7 @@ GameObject:
   - component: {fileID: 1239742111}
   - component: {fileID: 1239742114}
   - component: {fileID: 1239742115}
+  - component: {fileID: 1239742116}
   m_Layer: 5
   m_Name: InfoBooth_Btn
   m_TagString: Untagged
@@ -1920,6 +2067,35 @@ MonoBehaviour:
   firstVisit: 0
   buildingSceneName: InfoBooth_Scene
   tutorialSceneName: InfoBooth_Scene
+--- !u!114 &1239742116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239742109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1266882551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2181,7 @@ GameObject:
   - component: {fileID: 1409670245}
   - component: {fileID: 1409670247}
   - component: {fileID: 1409670248}
+  - component: {fileID: 1409670249}
   m_Layer: 5
   m_Name: RacoonIcon
   m_TagString: Untagged
@@ -2140,6 +2317,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Character Icon
   content: Click to view the menu
+--- !u!114 &1409670249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409670243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1415803710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,6 +2495,7 @@ GameObject:
   - component: {fileID: 1486889950}
   - component: {fileID: 1486889953}
   - component: {fileID: 1486889954}
+  - component: {fileID: 1486889955}
   m_Layer: 5
   m_Name: Stocks_Btn
   m_TagString: Untagged
@@ -2440,6 +2647,35 @@ MonoBehaviour:
   firstVisit: 0
   buildingSceneName: StockBuildingScene
   tutorialSceneName: StockBuildingScene
+--- !u!114 &1486889955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486889948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1643182224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,6 +2766,7 @@ GameObject:
   - component: {fileID: 1669044342}
   - component: {fileID: 1669044345}
   - component: {fileID: 1669044346}
+  - component: {fileID: 1669044347}
   m_Layer: 5
   m_Name: AcctOverview_Btn
   m_TagString: Untagged
@@ -2681,6 +2918,35 @@ MonoBehaviour:
   firstVisit: 0
   buildingSceneName: AccountOverview_Scene
   tutorialSceneName: AccountOverview_Scene
+--- !u!114 &1669044347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669044340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1691471874
 GameObject:
   m_ObjectHideFlags: 0
@@ -20477,6 +20743,7 @@ GameObject:
   - component: {fileID: 1939922578}
   - component: {fileID: 1939922577}
   - component: {fileID: 1939922576}
+  - component: {fileID: 1939922580}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -20571,6 +20838,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1939922580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939922575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9bef10e4be6cc4c9a55c37ea8df271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1949271235
 GameObject:
   m_ObjectHideFlags: 0
@@ -20660,6 +20939,7 @@ GameObject:
   - component: {fileID: 1983920244}
   - component: {fileID: 1983920243}
   - component: {fileID: 1983920246}
+  - component: {fileID: 1983920247}
   m_Layer: 5
   m_Name: AlumniIcon
   m_TagString: Untagged
@@ -20795,6 +21075,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: Character Icon
   content: Click to view the menu
+--- !u!114 &1983920247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983920241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1939922580}
+          m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+          m_MethodName: PlayHighlightSFX
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1997382577
 GameObject:
   m_ObjectHideFlags: 0

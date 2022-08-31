@@ -231,6 +231,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 824813331}
+        m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+        m_MethodName: PlayHighlightSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &33656167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3661,6 +3673,7 @@ GameObject:
   - component: {fileID: 824813325}
   - component: {fileID: 824813329}
   - component: {fileID: 824813330}
+  - component: {fileID: 824813331}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3787,6 +3800,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cb62d5ef3be471cae277b868742e7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &824813331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824813324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9bef10e4be6cc4c9a55c37ea8df271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &827406240
@@ -4338,6 +4363,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 922542762}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 824813331}
+        m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+        m_MethodName: PlayHighlightSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5388,6 +5425,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1210005389}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 824813331}
+        m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+        m_MethodName: PlayHighlightSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7791,6 +7840,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 824813331}
+        m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+        m_MethodName: PlayHighlightSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1779783367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8785,6 +8846,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1912627969}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 824813331}
+        m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+        m_MethodName: PlayHighlightSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

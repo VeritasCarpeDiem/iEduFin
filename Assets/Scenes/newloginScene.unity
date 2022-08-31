@@ -2574,6 +2574,7 @@ GameObject:
   - component: {fileID: 1225892743}
   - component: {fileID: 1225892742}
   - component: {fileID: 1225892741}
+  - component: {fileID: 1225892745}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2664,6 +2665,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1225892745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225892740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9bef10e4be6cc4c9a55c37ea8df271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1245813456
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,6 +2690,7 @@ GameObject:
   - component: {fileID: 1245813460}
   - component: {fileID: 1245813459}
   - component: {fileID: 1245813458}
+  - component: {fileID: 1245813462}
   m_Layer: 5
   m_Name: BackBtn
   m_TagString: Untagged
@@ -2768,7 +2782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1245813460}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1245813462}
+        m_TargetAssemblyTypeName: LoadNewSceneBtn, Assembly-CSharp
+        m_MethodName: LoadNewScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainMenu_Scene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1245813460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,6 +2833,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245813456}
   m_CullTransparentMesh: 1
+--- !u!114 &1245813462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245813456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb62d5ef3be471cae277b868742e7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1256174383
 GameObject:
   m_ObjectHideFlags: 0
@@ -4897,6 +4935,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1225892745}
+        m_TargetAssemblyTypeName: SFXTrigger, Assembly-CSharp
+        m_MethodName: PlaySelectSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1598795520}
         m_TargetAssemblyTypeName: NewLoginBtn, Assembly-CSharp
         m_MethodName: OnClick
