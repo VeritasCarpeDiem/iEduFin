@@ -16,7 +16,8 @@ using UnityEngine.UI;
 
 
 public class NewLoginBtn : UnityEngine.MonoBehaviour
-{ 
+{
+    private const string UNAUTHORIZED = "Invalid username or password";
     private string authenticationEndpoint = "http://132.249.242.242";
    const string LOGIN_ENDPOINT = "/account/login";
    private const string PLAYERDATA_ENDPOINT = "/account/data/"; 
@@ -71,7 +72,7 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
             if (response.StatusCode.ToString() == "Unauthorized") 
             {
                 this.loginButton.interactable = true;
-                alertText.text = respBody;
+                alertText.text = UNAUTHORIZED;
             }
             else
             {
@@ -82,6 +83,7 @@ public class NewLoginBtn : UnityEngine.MonoBehaviour
                 //maybe instantiate a global account here with same fields + account info 
                 Debug.Log(accRespBody);
                 PlayerAccountData returnedAccount = JsonConvert.DeserializeObject<PlayerAccountData>(accRespBody);
+                Debug.Log("ACCDATA: " + accRespBody);
                 accountManager.playerAccount = returnedAccount;
                 alertText.text = $"Welcome {returnedAccount.username}";
                 accountManager.OnDeserialize();

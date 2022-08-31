@@ -20,9 +20,10 @@ namespace DefaultNamespace
         [SerializeField] private Transform stockBody;
         [SerializeField]private Transform cryptoBody;
         [SerializeField]private Transform tradeHistoryBody;
+        [SerializeField]private Transform accountHistoryBody;
         [SerializeField]private StockBuilding stockBuilding;
         [SerializeField]private CryptoBuilding cryptoBuilding;
-        
+       
         private AccountManager accManager;
         private PlayerAccountData playerData;
         private Dictionary<string, decimal> ownedCrypto;
@@ -41,12 +42,13 @@ namespace DefaultNamespace
               accHistory = playerData.transactionHistory;
               
               buyingPower = Math.Round(playerData.balance,2);
-              buyingPowerField.text = String.Format("{0:n}","$" + buyingPower.ToString());
+              buyingPowerField.text = "$" +  buyingPower.ToString();
               
               accountValue = await CalculateAccountValue();
+              await updateAccountBalanceHistory();
               Debug.Log("accountValue" + accountValue);
               
-              accountValueField.text = String.Format("{0:n}","$" + Math.Round(accountValue, 2).ToString());
+              accountValueField.text = "$" + Math.Round(accountValue, 2).ToString();
               
               await PopulateStocks();
               
@@ -55,12 +57,13 @@ namespace DefaultNamespace
               PopulateTradeHistory();
         }
 
-        public async Task PopulateStocks()
+        private async Task PopulateStocks()
         {
             foreach (KeyValuePair<string,int> entry in ownedStocks)
             {
                 await stockBuilding.RequestStockQuote(entry.Key);
                 var stock = stockBuilding.GetStockQuote();
+                Debug.Log(stock.Price);
                 var price = Math.Round(stock.Price,2);
                
                 GameObject cardObj = Instantiate(cardTemplatePrefab, stockBody);
@@ -87,7 +90,7 @@ namespace DefaultNamespace
         }
 
 
-        public async Task PopulateCrypto()
+        private async Task PopulateCrypto()
         {
             foreach (KeyValuePair<string,decimal> entry in ownedCrypto)
             {
@@ -115,9 +118,9 @@ namespace DefaultNamespace
                 Debug.Log( cardObj.GetComponent<AOCardData>().priceText.text);
             }
         }
-        
 
-        public  void  PopulateTradeHistory()
+
+        private void  PopulateTradeHistory()
         {
             int start = accHistory.Count - 1;
             int count = 0;
@@ -138,7 +141,7 @@ namespace DefaultNamespace
         }
         
         //TODO: REFACTOR
-       public async Task<Decimal> CalculateAccountValue()
+        private async Task<Decimal> CalculateAccountValue()
        {
            decimal accValue = buyingPower;
            //loop through each k,v pair of stocks and add them up to calculate account value (key = stock, value = numshares)
@@ -159,8 +162,18 @@ namespace DefaultNamespace
 
            return accValue;
        }
-       
-       
+
+       private async Task updateAccountBalanceHistory()
+       {
+           string currDate = DateTime.Now.ToString("yyyy-MM-dd");
+           accManager.playerAccount.accountValueHistory[currDate] = accountValue;
+           await accManager.saveData();
+       }
+
+       private void PopulateAccountBalanceHistory()
+       {
+           
+       }
     
     
 }

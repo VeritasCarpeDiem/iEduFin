@@ -1152,6 +1152,7 @@ MonoBehaviour:
   stockBody: {fileID: 575556766}
   cryptoBody: {fileID: 931106369}
   tradeHistoryBody: {fileID: 1582265744}
+  accountHistoryBody: {fileID: 0}
   stockBuilding: {fileID: 381602152}
   cryptoBuilding: {fileID: 2049431810}
 --- !u!1 &272060257
@@ -7272,6 +7273,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1646772094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 949829226754343494, guid: f8bec544e6bbaa54e8b4441151e1026e, type: 3}
+  m_PrefabInstance: {fileID: 2933020926158007932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1678530072
 GameObject:
   m_ObjectHideFlags: 0
@@ -10761,6 +10773,10 @@ PrefabInstance:
       propertyPath: actionText
       value: 
       objectReference: {fileID: 1867282518}
+    - target: {fileID: 6826429114584136336, guid: f8bec544e6bbaa54e8b4441151e1026e, type: 3}
+      propertyPath: quantityText
+      value: 
+      objectReference: {fileID: 1646772094}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8bec544e6bbaa54e8b4441151e1026e, type: 3}
 --- !u!1 &2933020926158007933 stripped

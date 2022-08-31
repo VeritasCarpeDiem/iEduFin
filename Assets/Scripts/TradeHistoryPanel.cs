@@ -8,5 +8,7 @@ namespace DefaultNamespace
         [SerializeField] public TextMeshProUGUI nameText;
         [SerializeField] public TextMeshProUGUI dateText;
         [SerializeField] public TextMeshProUGUI actionText;
+        [SerializeField] public TextMeshProUGUI quantityText;
+        
     }
 }
