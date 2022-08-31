@@ -1,10 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
+using FullSerializer;
+using Packages.Rider.Editor.UnitTesting;
 using TMPro;
 using UnityEditor.Scripting;
 using UnityEngine;
+using UnityEngine.Networking.Match;
+using UnityEngine.Rendering.VirtualTexturing;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
 namespace DefaultNamespace
@@ -20,9 +27,10 @@ namespace DefaultNamespace
         [SerializeField] private Transform stockBody;
         [SerializeField]private Transform cryptoBody;
         [SerializeField]private Transform tradeHistoryBody;
-        [SerializeField]private Transform accountHistoryBody;
+        [SerializeField]private Transform balhistBody;
         [SerializeField]private StockBuilding stockBuilding;
         [SerializeField]private CryptoBuilding cryptoBuilding;
+        [SerializeField]private GameObject balcellprefab;
        
         private AccountManager accManager;
         private PlayerAccountData playerData;
@@ -42,13 +50,14 @@ namespace DefaultNamespace
               accHistory = playerData.transactionHistory;
               
               buyingPower = Math.Round(playerData.balance,2);
-              buyingPowerField.text = "$" +  buyingPower.ToString();
+              buyingPowerField.text = "$" +  String.Format("{0:n}",buyingPower);
               
               accountValue = await CalculateAccountValue();
               await updateAccountBalanceHistory();
+              PopulateAccountBalanceHistory();
               Debug.Log("accountValue" + accountValue);
               
-              accountValueField.text = "$" + Math.Round(accountValue, 2).ToString();
+              accountValueField.text = "$" + String.Format("{0:n}",Math.Round(accountValue, 2));
               
               await PopulateStocks();
               
@@ -173,6 +182,47 @@ namespace DefaultNamespace
 
        private void PopulateAccountBalanceHistory()
        {
+           var dates =
+               from val in accManager.playerAccount.accountValueHistory.Keys.OrderByDescending(d => DateTime.Parse(d))
+               select val;
+           
+           for (int i = 0; i < dates.Count(); i++)
+           {
+              
+               GameObject cellObj = Instantiate(balcellprefab, balhistBody);
+               var panel = cellObj.GetComponent<BalHistPanel>();
+               
+               if (i == dates.Count() - 1)
+               {
+                   string currDate = dates.ElementAt(i);
+                   panel.dateText.text = currDate;
+                   panel.acctValueText.text = "$" + String.Format("{0:n}",Math.Round(accManager.playerAccount.accountValueHistory[currDate],2));
+                   panel.changeText.text = "___";
+               }
+               else
+               {
+                   string currDate = dates.ElementAt(i);
+                   
+                   //Because list is in descending order
+                   string prevDate = dates.ElementAt(i + 1);
+                   decimal accValue = Math.Round(accManager.playerAccount.accountValueHistory[currDate],2);
+                   decimal prevDayVal = accManager.playerAccount.accountValueHistory[prevDate];
+                   decimal change = Math.Round(accValue - prevDayVal,2);
+                   decimal percentChange = Math.Abs(Math.Round(change / accValue,4));
+
+                  
+                   panel.dateText.text = currDate;
+                   panel.acctValueText.text = "$" + String.Format("{0:n}",accValue);
+                   panel.changeText.text = $"${change} ( {percentChange}%)";
+                   
+                   if (change < 0)
+                   {
+                       panel.changeText.text = $"${change} ( {percentChange}%)";
+                       panel.changeText.color = Color.red;
+                   }
+               }
+     
+           }
            
        }
     
