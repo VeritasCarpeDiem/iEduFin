@@ -1,5 +1,4 @@
-﻿using UnityEditor.TextCore.Text;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace

@@ -18,7 +18,8 @@ namespace DefaultNamespace
         
         void  Start()
         {
-            string path = Application.dataPath + "/StockAndCryptoData/CryptoData.txt";
+            // string path = Application.dataPath + "/StockAndCryptoData/CryptoData.txt";
+            string path = Application.streamingAssetsPath + "/stockcryptodata/CryptoData.txt";
             var data = System.IO.File.ReadAllText(path);
             CryptoToDisplay = data.Split(",");
             

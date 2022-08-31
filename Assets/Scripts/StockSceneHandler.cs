@@ -5,9 +5,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.PackageManager.Requests;
 using UnityEngine.UIElements;
+using System.IO;
 
 
 public class StockSceneHandler : MonoBehaviour
@@ -22,7 +21,11 @@ public class StockSceneHandler : MonoBehaviour
     [SerializeField] public TextMeshProUGUI  warningText;
         void  Start()
         {
-            string path = Application.dataPath + "/StockAndCryptoData/StockData.txt";
+            Debug.Log("PERSISTAJT PATH::: ");
+            Debug.Log(Application.persistentDataPath);
+            
+            // string path = Application.dataPath + "/StockAndCryptoData/StockData.txt";
+            string path = Application.streamingAssetsPath + "/stockcryptodata/StockData.txt";
             var data = System.IO.File.ReadAllText(path);
             StocksToDisplay = data.Split(",");
 

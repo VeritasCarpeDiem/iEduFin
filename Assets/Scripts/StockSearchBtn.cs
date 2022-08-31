@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using DefaultNamespace;
 using Unity.VisualScripting;
-using UnityEditor.Scripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
