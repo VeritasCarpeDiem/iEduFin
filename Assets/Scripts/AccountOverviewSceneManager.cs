@@ -132,6 +132,7 @@ namespace DefaultNamespace
                 panel.nameText.text = t.itemName;
                 panel.dateText.text = t.transactionDate.ToShortDateString();
                 panel.actionText.text = t.action;
+                panel.quantityText.text = t.quantity.ToString();
                 //changes color of action text depending whether it's buy or sell
                 if (panel.actionText.text.Equals("SELL"))
                 {

@@ -22,7 +22,9 @@ namespace DefaultNamespace
         [SerializeField]  TextMeshProUGUI changeText;
         [SerializeField]  TextMeshProUGUI priceText;
         [SerializeField]  TextMeshProUGUI purchaseMessage;
-        
+        [SerializeField]  TextMeshProUGUI priceChangeText;
+        [SerializeField]  TextMeshProUGUI closingPrice;
+        [SerializeField]  TextMeshProUGUI volumeText;
         private CurrentStockData currStock;
         private AccountManager accManager;
         private StockQuote stock;
@@ -42,15 +44,24 @@ namespace DefaultNamespace
         void populateUI()
         {
             Debug.Log(dropdown.captionText.text);
+            
             this.stockName.text = stock.Symbol;
             this.priceText.text = "$" + Math.Round((stock.Price ), 2);
             this.changeText.text = stock.ChangePercent;
+            this.priceChangeText.text = "$" + stock.Change;
+            this.closingPrice.text = "$" + stock.PreviousClose;
+            this.volumeText.text =  stock.Volume.ToString();
+            
             //changes color of change text depending whether it's a gain or loss
             if (this.changeText.text.Contains("-"))
             {
                 this.changeText.GetComponent<TextMeshProUGUI>().color = new Color32(241,52,0,255);
             }
-            
+            if (this.priceChangeText.text.Contains("-"))
+            {
+                this.priceChangeText.GetComponent<TextMeshProUGUI>().color = new Color32(241,52,0,255);
+            }
+
             quantityInputField.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
 
             }

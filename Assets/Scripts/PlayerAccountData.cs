@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TMPro;
 
 namespace DefaultNamespace
 {
@@ -14,7 +15,7 @@ namespace DefaultNamespace
         public List<Transaction> transactionHistory;
         public decimal balance;
         public string className;
-
+        public bool firstLogin;
         public PlayerAccountData(string username)
         {
             this.username = username;
@@ -29,6 +30,7 @@ namespace DefaultNamespace
             balance = 0;
             
             className = "";
+            firstLogin = true;
         }
 
 

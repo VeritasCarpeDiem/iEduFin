@@ -1083,8 +1083,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58
-  m_fontSizeBase: 58
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1626,8 +1626,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280334136
+  m_fontColor: {r: 0.21960784, g: 0.7176471, b: 0.1254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4789,6 +4789,9 @@ MonoBehaviour:
   changeText: {fileID: 859526348}
   priceText: {fileID: 1846156202}
   purchaseMessage: {fileID: 1481972446}
+  priceChangeText: {fileID: 526886448}
+  closingPrice: {fileID: 445367393}
+  volumeText: {fileID: 420360455}
 --- !u!1 &1683767616
 GameObject:
   m_ObjectHideFlags: 0
