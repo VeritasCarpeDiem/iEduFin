@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+guid: 31ad199c0a59e7d428e1b5874b600210
+=======
+guid: e1c47a06a874c64458b2554e34addb74
+>>>>>>> ArtandAudio
+=======
 guid: e1c47a06a874c64458b2554e34addb74
 =======
 guid: 31ad199c0a59e7d428e1b5874b600210
 >>>>>>> master
+>>>>>>> ArtandAudio
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

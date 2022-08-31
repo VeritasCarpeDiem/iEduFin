@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 152351ece8ff84240bcd109eb3e2dd33
+=======
 guid: 771e1bba1ca9b9a49a2b0bf2cb6d4d46
+>>>>>>> ArtandAudio
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
