@@ -15,7 +15,7 @@ namespace DefaultNamespace
                 Destroy(GameObjects[i]);
             }
 
-            SceneManager.LoadScene("newloginScene");
+            SceneManager.LoadScene("MainMenu_Scene");
         }
     }
 }

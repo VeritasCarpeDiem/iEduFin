@@ -6,8 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class Setting_Button_controller : MonoBehaviour
 {
-    public void clicked()
+    public static Setting_Button_controller instance;
+    
+    public bool backToMap;
+
+    private void Awake()
     {
-        SceneManager.LoadScene(6);
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 }
