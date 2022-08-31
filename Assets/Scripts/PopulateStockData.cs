@@ -45,6 +45,11 @@ namespace DefaultNamespace
             this.stockName.text = stock.Symbol;
             this.priceText.text = "$" + Math.Round((stock.Price ), 2);
             this.changeText.text = stock.ChangePercent;
+            //changes color of change text depending whether it's a gain or loss
+            if (this.changeText.text.Contains("-"))
+            {
+                this.changeText.GetComponent<TextMeshProUGUI>().color = new Color32(241,52,0,255);
+            }
             
             quantityInputField.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
 
@@ -151,7 +156,7 @@ namespace DefaultNamespace
                 else
                 {
                     purchaseMessage.text =
-                        $"CANNOT COMPLETE ACTION! \n you only own {numOwned} shares of {stockName.text} \n Current Account Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
+                        $"CANNOT COMPLETE ACTION! \n You only own {numOwned} shares of {stockName.text} \n Current Account Balance: ${ String.Format("{0:n}",Math.Round(accManager.playerAccount.balance,2))}";
                     return;
                 }
                 

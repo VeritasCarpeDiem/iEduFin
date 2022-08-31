@@ -1292,7 +1292,6 @@ MonoBehaviour:
   playerAccount:
     username: 
     className: 
-  authenticationEndpoint: http://localhost:13756
 --- !u!4 &539802779
 Transform:
   m_ObjectHideFlags: 0
@@ -2442,8 +2441,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4292431409
+  m_fontColor: {r: 0.19215688, g: 0.30588236, b: 0.85098046, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2472,7 +2471,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -3853,7 +3852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1e2375e6674f3bbcb0d9bff6c3a272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  authenticationEndpoint: http://localhost:13756
   usernameInput: {fileID: 1435328628}
   passwordInput: {fileID: 405793109}
   alertText: {fileID: 827096172}

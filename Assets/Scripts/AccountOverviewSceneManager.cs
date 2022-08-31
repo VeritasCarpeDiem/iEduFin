@@ -101,6 +101,11 @@ namespace DefaultNamespace
                 x.nameText.text = crypto.Name;
                 x.priceText.text = $"${ String.Format("{0:n}",price)}";
                 x.changePercentText.text = "";
+                //changes color of percent text depending whether it's a gain or loss
+                if (x.changePercentText.text.Contains("-"))
+                {
+                    x.changePercentText.GetComponent<TextMeshProUGUI>().color = new Color32(241,52,0,255);
+                }
                 x.numShares.text = $"{entry.Value.ToString()} shares";
                 
                 float portPercent = (float) ((entry.Value * price)/accountValue);
